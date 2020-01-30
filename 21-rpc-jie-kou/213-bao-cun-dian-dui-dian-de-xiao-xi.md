@@ -16,5 +16,11 @@ func SavePeerMessage(addr string, m *common.PeerMessage) (int64, int64,error) {
 }
 ```
 
+调用方
+
+```go
+	msgid,offset, err := SaveMessage(client.appid, msg.sender, client.device_ID, m)
+```
+
 
 
