@@ -18,7 +18,9 @@ type PeerHistoryMessage struct {
 }
 ```
 
-这个HistoryMessage 需要增加个字段 Offset代表这个用户的消息的存储偏移
+这个HistoryMessage 需要增加个字段 Offset代表这个用户的消息的存储偏移,修改后如下
+
+
 
 
 
