@@ -9,5 +9,7 @@
 | 2020-01-30 | 保存点对点的消息，需要返回保存的偏移 |
 | 2020-01-30 | 保存群组的消息，需要返回保存的偏移 |
 
+rpc 接口的实现文件
 
+gopath/src/nacaiim/storage\_server/storages/rpc.go
 
