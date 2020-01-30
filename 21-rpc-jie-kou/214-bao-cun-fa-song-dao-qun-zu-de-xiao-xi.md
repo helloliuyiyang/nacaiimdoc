@@ -16,5 +16,11 @@ func SaveGroupMessage(addr string, m *common.GroupMessage) (int64,int64, error) 
 }
 ```
 
+ 调用方
+
+```go
+	msgid,offset, err := SaveGroupMessage(p.appid, msg.ToGroupid, p.device_ID, m)
+```
+
 
 
