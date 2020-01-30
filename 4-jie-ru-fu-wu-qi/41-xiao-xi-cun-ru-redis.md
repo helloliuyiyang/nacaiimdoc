@@ -1,7 +1,7 @@
 ## 4.1 消息存入redis
 
 聊天消息在redis中使用ZSET 存储。分数使用每个消息的msgid,msgid是全局的编号，用来查找消息。  
-点对点的key为: impeer_msg:userid_
+点对点的zsetkey为: impeer_msg:userid_
 
-群组的key为:imgroup_msg:groupid_
+群组的zsetkey为:imgroup_msg:groupid_
 
