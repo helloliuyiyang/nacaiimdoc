@@ -20,7 +20,16 @@ type PeerHistoryMessage struct {
 
 这个HistoryMessage 需要增加个字段 Offset代表这个用户的消息的存储偏移,修改后如下
 
+```go
+type HistoryMessage struct {
+Offset int64
 
+	MsgID    int64
+	DeviceID int64 //消息发送者所在的设备ID
+	Cmd      int32
+	Raw      []byte
+}
+```
 
 
 
