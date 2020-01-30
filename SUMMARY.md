@@ -8,6 +8,7 @@
     * [2.1.1 点对点获取同步的消息](21-rpc-jie-kou/211-dian-dui-dian-huo-qu-tong-bu-de-xiao-xi.md)
     * [2.1.2 获取群组的同步消息](21-rpc-jie-kou/212-huo-qu-qun-zu-de-tong-bu-xiao-xi.md)
     * [2.1.3 保存点对点的消息](21-rpc-jie-kou/213-bao-cun-dian-dui-dian-de-xiao-xi.md)
+    * [2.1.4 保存发送到群组的消息](21-rpc-jie-kou/214-bao-cun-fa-song-dao-qun-zu-de-xiao-xi.md)
 * [3 路由服务器](3-lu-you-fu-wu-qi.md)
 * [4 接入服务器](4-jie-ru-fu-wu-qi.md)
   * [4.1 消息存入redis](4-jie-ru-fu-wu-qi/41-xiao-xi-cun-ru-redis.md)
