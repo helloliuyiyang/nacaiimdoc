@@ -2,7 +2,14 @@
 
 当用户进行点对点的消息发送时，需要调用这个SaveMessage的接口保存消息
 
+之前的接口返回参数
 
+```
+func SavePeerMessage(addr string, m *common.PeerMessage) (int64, error) {
+}
+```
+
+需要增加返回个Offset的参数。在成功保存消息后，需要将Offset返回给RPC 的调用方。
 
 
 
