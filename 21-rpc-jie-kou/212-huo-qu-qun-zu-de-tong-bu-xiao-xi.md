@@ -6,12 +6,12 @@
 
 ```go
 type PeerHistoryMessage struct {
-	Messages  []*HistoryMessage
-	LastMsgID int64
+    Messages  []*HistoryMessage
+    LastMsgID int64
 }
 
 type GroupHistoryMessage PeerHistoryMessage
 ```
 
-
+这个使用点对点同步的接口，同步进行了修改。已经增加了Offset
 
