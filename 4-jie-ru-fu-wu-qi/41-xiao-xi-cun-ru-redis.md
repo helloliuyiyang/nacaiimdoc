@@ -5,9 +5,9 @@
 
 群组的zsetkey为:imgroup_msg:groupid_
 
-
-
 点对点消息的一个用户使用一个ZSET保存他的点对点的消息。
 
 一个群组使用一个ZSET保存他的的群组消息。
+
+这些zset中保存的消息使用offset来作为这个消息的key。
 
