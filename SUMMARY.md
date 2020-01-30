@@ -15,5 +15,6 @@
 * [4 接入服务器](4-jie-ru-fu-wu-qi.md)
   * [4.1 消息存入redis](4-jie-ru-fu-wu-qi/41-xiao-xi-cun-ru-redis.md)
   * [4.2 从redis中查找消息](4-jie-ru-fu-wu-qi/42-cong-redis-zhong-cha-zhao-xiao-xi.md)
-* 5  通知服务器
+* [5  通知服务器](5-tong-zhi-fu-wu-qi.md)
+* [6 imsdk](6-imsdk.md)
 
