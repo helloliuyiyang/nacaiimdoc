@@ -22,12 +22,12 @@ type PeerHistoryMessage struct {
 
 ```go
 type HistoryMessage struct {
-Offset int64
+    Offset int64
 
-	MsgID    int64
-	DeviceID int64 //消息发送者所在的设备ID
-	Cmd      int32
-	Raw      []byte
+    MsgID    int64
+    DeviceID int64 //消息发送者所在的设备ID
+    Cmd      int32
+    Raw      []byte
 }
 ```
 
