@@ -18,5 +18,7 @@ type PeerHistoryMessage struct {
 }
 ```
 
+这个HistoryMessage 需要增加个字段
+
 
 
