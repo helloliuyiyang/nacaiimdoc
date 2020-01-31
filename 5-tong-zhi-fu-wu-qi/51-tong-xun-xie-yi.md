@@ -26,5 +26,7 @@ type SyncProtocolHead struct {
 
 head 就是上面定义的固定长度的 SyncProtocolHead
 
+通讯协议的定义文件为:
 
+gopath/src/nacaiim/protoc/sync.proto
 
