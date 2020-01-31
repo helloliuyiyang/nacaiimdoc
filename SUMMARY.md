@@ -22,7 +22,6 @@
     * [5.1.3 点对点的同步通知带数据](5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.md)
     * [5.1.4 群组同步通知](5-tong-zhi-fu-wu-qi/514-qun-zu-tong-bu-tong-zhi.md)
     * [5.1.5 群组同步通知带数据](5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/515-qun-zu-tong-bu-tong-zhi-dai-shu-ju.md)
-    * [5.1.6 获取用户的所有的起始的同步偏移](5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/516-huo-qu-yong-hu-de-suo-you-de-qi-shi-de-tong-bu-pian-yi.md)
 * [6 imsdk](6-imsdk.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 
