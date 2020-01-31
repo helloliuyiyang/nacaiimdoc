@@ -6,7 +6,7 @@
 
 3:通知服务器给客户端的群组同步通知带上聊天消息\(IM\_CMD\_GROUP\_NOTIFY\_SYNC\_HAS\_CHATDATA = 338\)
 
-这个消息待的包体为
+这个消息的PB包体为
 
 ```js
 message ImGroupSyncNotifyWithData {
