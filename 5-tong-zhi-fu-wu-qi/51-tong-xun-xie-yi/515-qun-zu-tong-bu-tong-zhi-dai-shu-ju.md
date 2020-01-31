@@ -4,5 +4,5 @@
 
 ![](/assets/groupSyncNotifyWithData.png)
 
-
+3:通知服务器给客户端的群组同步通知\(IM\_CMD\_GROUP\_NOTIFY\_SYNC\_HAS\_CHATDATA = 338\)
 
