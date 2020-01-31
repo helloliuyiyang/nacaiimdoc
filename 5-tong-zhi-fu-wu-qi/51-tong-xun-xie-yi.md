@@ -20,5 +20,11 @@ type SyncProtocolHead struct {
 }
 ```
 
+消息结构如下
 
+
+
+![](/assets/msgStruct.png)
+
+head 就是上面定义的固定长度的 SyncProtocolHead
 
