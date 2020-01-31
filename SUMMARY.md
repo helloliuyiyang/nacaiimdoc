@@ -17,4 +17,5 @@
   * [4.2 从redis中查找消息](4-jie-ru-fu-wu-qi/42-cong-redis-zhong-cha-zhao-xiao-xi.md)
 * [5  通知服务器](5-tong-zhi-fu-wu-qi.md)
 * [6 imsdk](6-imsdk.md)
+* [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 
