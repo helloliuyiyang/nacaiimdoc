@@ -6,9 +6,11 @@
 
 ![](/assets/syncPeerNotifyNoDataSeq.png)
 
+3:通知服务器给客户端发送点对点的同步通知\(IM\_CMD\_NOTIFY\_SYNC=321\)
 
 
-3:通知服务器给客户端发送点对点的同步通知
+
+
 
 
 
