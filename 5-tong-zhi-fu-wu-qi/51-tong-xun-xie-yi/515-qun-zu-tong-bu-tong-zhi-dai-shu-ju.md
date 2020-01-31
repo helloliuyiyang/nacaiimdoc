@@ -22,8 +22,9 @@ int32 msgFlag=9;
 int64 preSynckey=10;
 bytes content=11;
 }
-
 ```
 
+协议文件路径为
 
+gopath/src/nacaiim/protoc/sync.proto
 
