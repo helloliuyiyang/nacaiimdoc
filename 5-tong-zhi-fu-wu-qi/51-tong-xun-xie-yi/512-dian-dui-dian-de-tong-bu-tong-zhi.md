@@ -11,7 +11,12 @@
 这个消息带的包体为
 
 ```
-
+// 消息结构.
+message UserMsgSyncInfo {
+    int64 GroupId = 1;
+    int64 SyncKey = 2;
+    int64 OffSet = 3;
+}
 ```
 
 
