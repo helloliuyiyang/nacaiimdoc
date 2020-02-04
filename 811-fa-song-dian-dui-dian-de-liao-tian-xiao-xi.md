@@ -24,6 +24,10 @@ message ImClientSendMsg {
 
 协议文件位置为gopath/src/nacaiim/protoc/msg.proto
 
+|   字段 | 备注 | 可选 |
+| :--- | :--- | :--- |
+| head | 这个消息的头\(当前版本里不需要了\) | 可选 |
+
 ![](/assets/chatmsgsync.png)
 
 2：请求发送单聊消息到chatsync_server, 连接为tcp 或者quic协议的udp连接._
