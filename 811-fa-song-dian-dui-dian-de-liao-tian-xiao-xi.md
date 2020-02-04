@@ -61,3 +61,14 @@ message ImClientSendMsgRes {
 
 这个回应消息协议文件位置为gopath/src/nacaiim/protoc/msg.proto
 
+| 字段 | 备注 | 可选 |
+| :--- | :--- | :--- |
+| head | 这个pb的头（当前版本不需要\) | 没有 |
+| toUID | 接收这个消息的用户ID | 必须 |
+| len | 这个消息的长度 | 必须 |
+| msgid | 客户端发送这个消息的消息ID。服务端返回同样的msgid | 必须 |
+| code | 服务端返回发送消息的回应码。200位成功。403，禁止发送。201：非好友 | 必须 |
+| offset | 返回发送这个消息的同步key位置 | 必须 |
+
+
+
