@@ -26,7 +26,7 @@ message ImClientSendMsg {
 
 | 字段 | 备注 | 可选 |
 | :--- | :--- | :--- |
-| head | 这个消息的头\(当前版本里不需要了\) | 可选 |
+| head | 这个消息的头\(当前版本里不需要了\) | 没有 |
 | nextOffset | 这个消息的下一个偏移。客户端发送上来的。这个字段没有意义。忽略 | 没有 |
 
 ![](/assets/chatmsgsync.png)
