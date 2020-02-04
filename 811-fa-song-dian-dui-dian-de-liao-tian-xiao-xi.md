@@ -4,7 +4,7 @@
 
 imsdk-&gt;chatsync\_server
 
-这个消息的pb为
+这个消息事件（IM\_CMD\_CLIENT\_SEND\_IM     = 315）这消息的pb为如下:
 
 ```go
 //客户端向服务端发送聊天的消息 3.8
