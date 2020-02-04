@@ -4,7 +4,7 @@
 
 这个消息的PB 为
 
-```js
+```go
 message ImGroupSendMsg {
   Head head=1;
   int64  offset=2;
