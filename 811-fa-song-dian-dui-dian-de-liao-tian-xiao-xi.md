@@ -26,7 +26,7 @@ message ImClientSendMsg {
 
 ![](/assets/chatmsgsync.png)
 
+2：请求发送单聊消息到chatsync_server, 连接为tcp 或者quic协议的udp连接._
+
 3:请丢发送单聊消息到access\_server  的请求是服务端的内部调用，需要为grpc调用。
-
-
 
