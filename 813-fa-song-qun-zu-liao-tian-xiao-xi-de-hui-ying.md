@@ -23,3 +23,7 @@ message ImGroupSendMsgRes {
 
 协议文件位置为gopath/src/nacaiim/protoc/msg.proto
 
+这个消息对应在[8.1.2 发送群组的聊天消息 中](/812-fa-song-qun-zu-de-liao-tian-xiao-xi.md)的第5步。
+
+
+
