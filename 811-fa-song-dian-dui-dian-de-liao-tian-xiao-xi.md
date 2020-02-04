@@ -24,3 +24,7 @@ message ImClientSendMsg {
 
 协议文件位置为gopath/src/nacaiim/protoc/msg.proto
 
+![](/assets/chatmsgsync.png)
+
+
+
