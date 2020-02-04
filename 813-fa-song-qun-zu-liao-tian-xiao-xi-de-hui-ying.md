@@ -8,7 +8,7 @@ chatsync\_server-&gt;imsdk
 
 这个消息的PB 为
 
-```
+```js
 message ImGroupSendMsgRes {
  Head head=1;
  int64 toGroupid=2;
