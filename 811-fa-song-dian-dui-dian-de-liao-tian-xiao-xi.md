@@ -46,7 +46,18 @@ message ImClientSendMsg {
 
 3:请丢发送单聊消息到access\_server  的请求是服务端的内部调用，需要为grpc调用。
 
-5:请求发送单聊消息成功的回应消息（IM\_CMD\_CLIENT\_SEND\_IM\_RES = 316）
+5:请求发送单聊消息成功的回应消息（IM\_CMD\_CLIENT\_SEND\_IM\_RES = 316）这个消息的PB如下
+
+```
+message ImClientSendMsgRes {
+ Head head=1;
+ int64 toUID=2;
+ int32 len=3;
+ int32 msgid=4;
+ int32 code=5;
+ int64 offset=6;
+}
+```
 
 
 
