@@ -24,9 +24,10 @@ message ImClientSendMsg {
 
 协议文件位置为gopath/src/nacaiim/protoc/msg.proto
 
-|   字段 | 备注 | 可选 |
+| 字段 | 备注 | 可选 |
 | :--- | :--- | :--- |
 | head | 这个消息的头\(当前版本里不需要了\) | 可选 |
+| nextOffset | 这个消息的下一个偏移。客户端发送上来的。这个字段为0 | 可选 |
 
 ![](/assets/chatmsgsync.png)
 
