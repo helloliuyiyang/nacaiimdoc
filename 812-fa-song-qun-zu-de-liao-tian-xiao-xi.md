@@ -2,6 +2,10 @@
 
 客户端向服务端发送群组的聊天消息。
 
+imsdk-&gt;chatsync\_server
+
+这个消息事件（IM\_CMD\_GROUP\_SEND\_IM     = 328）这消息的pb为如下:
+
 这个消息的PB 为
 
 ```go
