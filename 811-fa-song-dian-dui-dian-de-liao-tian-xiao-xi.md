@@ -4,7 +4,7 @@
 
 这个消息的pb为
 
-```
+```go
 //客户端向服务端发送聊天的消息 3.8
 message ImClientSendMsg {
   Head head=1;
@@ -20,7 +20,6 @@ message ImClientSendMsg {
   int64  preOffset=11;
   bytes  content=12;
 }
-
 ```
 
 
