@@ -8,16 +8,17 @@
 
 ```go
 //同步协议的报文头
-type SyncProtocolHead struct {
-    //body 长度(除开这2个字节的长度)
-    bodyLen uint16
-    //im的账号id
-    imuid int64
-    //命令号
-    cmdid int16
-    //序列号
-    seq int32
+type DataProtocolHead struct {
+	//body 长度(除开这2个字节的长度)
+	bodyLen uint16
+	//im的账号id
+	imuid int64
+	//命令号
+	cmdid int16
+	//序列号
+	seq int32
 }
+
 ```
 
 消息结构如下
