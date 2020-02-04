@@ -9,7 +9,16 @@ chatsync\_server-&gt;imsdk
 这个消息的PB 为
 
 ```
+message ImGroupSendMsgRes {
+ Head head=1;
+ int64 toGroupid=2;
+ int32 len=3;
+ int32 msgid=4;
+ int32 code=5;
+ int64 offset=6;
+ string desp=7;
 
+}
 ```
 
 
