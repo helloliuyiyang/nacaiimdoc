@@ -39,8 +39,10 @@ message ImGroupSendMsg {
 | len | 发送这个消息的长度 | 必须 |
 | msgType | 发送的这个消息的类型 | 必须 |
 | msgFlag | 发送的这个消息的标记 | 必须 |
-| PreOffset | 发送这个消息的前一个的偏移，客户端发送上去的。没有这个字段 | 没有  |
+| PreOffset | 发送这个消息的前一个的偏移，客户端发送上去的。没有这个字段 | 没有 |
 | content | 发送的这个消息的内容 | 必须 |
 
+这个消息的交互流程
 
+![](/assets/groupmsgsync.png)
 
