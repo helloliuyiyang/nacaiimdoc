@@ -36,7 +36,7 @@ message ImClientSendMsg {
 | len | 发送的这个消息的长度 | 必须 |
 | msgType | 发送的这个消息的类型 | 必须 |
 | msgFlag | 发送的这个消息的标记 | 必须 |
-| preOffset | 前一个消息的偏移 |  |
+| preOffset | 前一个消息的偏移。客户端发送上来的。这个字段没有意义。忽略 | 没有 |
 
 ![](/assets/chatmsgsync.png)
 
