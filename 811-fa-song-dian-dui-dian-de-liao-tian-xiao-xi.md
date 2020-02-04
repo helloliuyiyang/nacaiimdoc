@@ -27,12 +27,16 @@ message ImClientSendMsg {
 | 字段 | 备注 | 可选 |
 | :--- | :--- | :--- |
 | head | 这个消息的头\(当前版本里不需要了\) | 没有 |
+| offset | 这个消息的偏移。客户端发送上来的。这个字段没有意义。忽略 | 没有 |
 | nextOffset | 这个消息的下一个偏移。客户端发送上来的。这个字段没有意义。忽略 | 没有 |
-| fromUID | 发送消息的用户ID  | 必须 |
+| fromUID | 发送消息的用户ID | 必须 |
 | toUID | 接收消息的用户id | 必须 |
 | timestamp | 发送这个消息的时间戳 | 必须 |
 | msgid | 发送这个消息的客户端生成的msgid | 必须 |
 | len | 发送的这个消息的长度 | 必须 |
+| msgType | 发送的这个消息的类型 | 必须 |
+| msgFlag | 发送的这个消息的标记 | 必须 |
+| preOffset | 前一个消息的偏移 |  |
 
 ![](/assets/chatmsgsync.png)
 
