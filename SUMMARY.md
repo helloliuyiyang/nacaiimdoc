@@ -27,4 +27,5 @@
 * [6 imsdk](6-imsdk.md)
   * [6.1 imsdk结构](6-imsdk/61-imsdkjie-gou.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
+* [8  消息同步服务器](8-xiao-xi-tong-bu-fu-wu-qi.md)
 
