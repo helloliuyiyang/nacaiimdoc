@@ -25,5 +25,6 @@
   * [5.2 同步拉取消息协议](5-tong-zhi-fu-wu-qi/52-tong-bu-la-qu-xiao-xi-xie-yi.md)
   * [5.3  发送聊天消息协议](5-tong-zhi-fu-wu-qi/53-fa-song-liao-tian-xiao-xi-xie-yi.md)
 * [6 imsdk](6-imsdk.md)
+  * [6.1 imsdk结构](6-imsdk/61-imsdkjie-gou.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 
