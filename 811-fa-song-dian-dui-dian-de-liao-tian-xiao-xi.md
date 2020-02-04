@@ -59,5 +59,5 @@ message ImClientSendMsgRes {
 }
 ```
 
-协议文件位置为gopath/src/nacaiim/protoc/msg.proto
+这个回应消息协议文件位置为gopath/src/nacaiim/protoc/msg.proto
 
