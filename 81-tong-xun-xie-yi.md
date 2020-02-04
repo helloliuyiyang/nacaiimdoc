@@ -28,5 +28,5 @@ head 就是上面定义的固定长度的 DataProtocolHead
 
 通讯协议的定义文件为:
 
-gopath/src/nacaiim/protoc/sync.proto
+gopath/src/nacaiim/protoc/msg.proto
 
