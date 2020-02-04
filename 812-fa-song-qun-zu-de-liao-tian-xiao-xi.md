@@ -4,7 +4,7 @@
 
 这个消息的PB 为
 
-```
+```go
 message ImGroupSendMsg {
   Head head=1;
   int64  offset=2;
@@ -16,10 +16,9 @@ message ImGroupSendMsg {
   int32  len=8;
   int32  msgType=9;
   int32  msgFlag=10;
-  int64	 PreOffset=11;
+  int64     PreOffset=11;
   bytes  content=12;
 }
-
 ```
 
 
