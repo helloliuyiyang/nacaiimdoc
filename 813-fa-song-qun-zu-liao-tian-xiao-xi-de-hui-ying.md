@@ -4,9 +4,13 @@
 
 chatsync\_server-&gt;imsdk
 
-这个消息事件（IM\_CMD\_GROUP\_SEND\_IM     = 328）这消息的pb为如下:
+这个消息事件（IM\_CMD\_GROUP\_SEND\_IM\_RES = 329）这消息的pb为如下:
 
 这个消息的PB 为
+
+```
+
+```
 
 
 
