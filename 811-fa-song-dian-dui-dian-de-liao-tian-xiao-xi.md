@@ -2,6 +2,8 @@
 
 客户端向服务端发送点对点的聊天消息
 
+imsdk-&gt;chatsync\_server
+
 这个消息的pb为
 
 ```go
