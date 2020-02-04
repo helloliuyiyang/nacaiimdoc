@@ -29,6 +29,7 @@
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 * [8  消息同步服务器](8-xiao-xi-tong-bu-fu-wu-qi.md)
   * [8.1 通讯协议](81-tong-xun-xie-yi.md)
+    * [8.1.1 发送点对点的聊天消息](811-fa-song-dian-dui-dian-de-liao-tian-xiao-xi.md)
 
 
 
