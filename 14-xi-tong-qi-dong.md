@@ -36,5 +36,19 @@ cd /Users/nacai/gopath/src/nacaiim/bin
 ./s
 ```
 
+7:启动接入消息变更通知服务器
+
+```
+cd /Users/nacai/gopath/src/nacaiim/bin
+./s
+```
+
+8:启动接入消息同步服务器
+
+```
+cd /Users/nacai/gopath/src/nacaiim/bin
+./s
+```
+
 
 
