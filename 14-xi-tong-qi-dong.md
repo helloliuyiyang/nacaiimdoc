@@ -40,7 +40,7 @@ cd /Users/nacai/gopath/src/nacaiim/bin
 
 ```
 cd /Users/nacai/gopath/src/nacaiim/bin
-./ns
+./syncs
 ```
 
 8:启动接入消息同步服务器
