@@ -10,18 +10,18 @@ im需要安装单机版的redis, mysql.
 
 使用im 自带的账号管理服务器,安装mysql后
 
-    create database im;
-    grant all privileges on *.* to "im"@"localhost" identified by "12345678" with grant option;
+```bash
+create database im;
+grant all privileges on *.* to "im"@"localhost" identified by "12345678" with grant option;
 
-    use im;
+use im;
 
-    CREATE TABLE `user_id` (
-                                  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-                                  `no` VARCHAR(32) UNIQUE NOT NULL,
-                                  PRIMARY KEY (`id`),
-                                  UNIQUE INDEX `id_UNIQUE` (`id` ASC) );
-
-
+CREATE TABLE `user_id` (
+                              `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                              `no` VARCHAR(32) UNIQUE NOT NULL,
+                              PRIMARY KEY (`id`),
+                              UNIQUE INDEX `id_UNIQUE` (`id` ASC) );
+```
 
 3:启动账号服务器
 
