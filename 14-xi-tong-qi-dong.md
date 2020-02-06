@@ -47,7 +47,7 @@ cd /Users/nacai/gopath/src/nacaiim/bin
 
 ```
 cd /Users/nacai/gopath/src/nacaiim/bin
-./cs
+./chats
 ```
 
 
