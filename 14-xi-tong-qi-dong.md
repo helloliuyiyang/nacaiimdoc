@@ -21,6 +21,22 @@ CREATE TABLE `user_id` (
                               `no` VARCHAR(32) UNIQUE NOT NULL,
                               PRIMARY KEY (`id`),
                               UNIQUE INDEX `id_UNIQUE` (`id` ASC) );
+                              
+                              
+                              
+CREATE TABLE `node_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tcp_port` int(4) NOT NULL,
+  `udp_port` int(4) NOT NULL,
+  `weight` int(4) NOT NULL,
+  `server_type` int(4) NOT NULL,
+  `tcp_protocol` varchar(255) DEFAULT NULL,
+  `address` varchar(512) NOT NULL,
+  `disabled` int(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
 ```
 
 3:启动账号服务器
