@@ -21,7 +21,6 @@ CREATE TABLE `user_id` (
                               `no` VARCHAR(32) UNIQUE NOT NULL,
                               PRIMARY KEY (`id`),
                               UNIQUE INDEX `id_UNIQUE` (`id` ASC) );
-
 ```
 
 本机配置数据
@@ -70,7 +69,6 @@ CREATE TABLE `user_id` (
     COMMIT;
 
     SET FOREIGN_KEY_CHECKS = 1;
-
 
 3:启动账号服务器
 
