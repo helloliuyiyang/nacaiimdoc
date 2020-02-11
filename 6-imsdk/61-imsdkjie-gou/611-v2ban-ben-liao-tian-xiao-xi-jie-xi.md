@@ -4,6 +4,8 @@ v2版本改动了客户端收到的聊天消息的格式。
 
 对应的文件为protoc/Sync.java
 
+之前用的文件为protoc/Msg.java
+
 点对点的
 
 ```js
