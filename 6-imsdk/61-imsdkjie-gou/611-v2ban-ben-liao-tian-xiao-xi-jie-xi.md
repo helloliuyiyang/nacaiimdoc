@@ -4,7 +4,7 @@ v2版本改动了客户端收到的聊天消息的格式。
 
 点对点的
 
-```
+```js
 message ImClientSendMsgSync {
 
   int64  offset=1;
