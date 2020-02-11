@@ -6,7 +6,7 @@ v2版本改动了客户端收到的聊天消息的格式。
 
 之前用的文件为protoc/Msg.java
 
-点对点的
+点对点的（事件为
 
 ```js
 message ImClientSendMsgSync {
