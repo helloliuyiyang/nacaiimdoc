@@ -23,7 +23,7 @@ message ImClientSendMsgSync {
 
 群组的
 
-```
+```js
 message ImGroupSendMsgSync {
   int64  offset=1;
   int64  nextOffset=2;
@@ -34,7 +34,7 @@ message ImGroupSendMsgSync {
   int32  len=7;
   int32  msgType=8;
   int32  msgFlag=9;
-  int64	 PreOffset=10;
+  int64     PreOffset=10;
   int64  toUID=11;
   bytes  content=12;
 }
