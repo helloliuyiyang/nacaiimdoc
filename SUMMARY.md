@@ -28,6 +28,7 @@
   * [5.3  发送聊天消息协议](5-tong-zhi-fu-wu-qi/53-fa-song-liao-tian-xiao-xi-xie-yi.md)
 * [6 imsdk](6-imsdk.md)
   * [6.1 imsdk结构](6-imsdk/61-imsdkjie-gou.md)
+    * [6.1.1 v2版本聊天消息解析](6-imsdk/61-imsdkjie-gou/611-v2ban-ben-liao-tian-xiao-xi-jie-xi.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 * [8  消息同步服务器](8-xiao-xi-tong-bu-fu-wu-qi.md)
   * [8.1 通讯协议](81-tong-xun-xie-yi.md)
