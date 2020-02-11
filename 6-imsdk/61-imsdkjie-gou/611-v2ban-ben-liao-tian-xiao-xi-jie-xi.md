@@ -6,7 +6,7 @@ v2版本改动了客户端收到的聊天消息的格式。
 
 之前用的文件为protoc/Msg.java
 
-点对点的（事件为
+点对点的（IM\_CMD\_CLIENT\_SEND\_IM=315\)
 
 ```js
 message ImClientSendMsgSync {
@@ -25,7 +25,7 @@ message ImClientSendMsgSync {
 }
 ```
 
-群组的
+群组的\(IM\_CMD\_GROUP\_SEND\_IM=328\)
 
 ```js
 message ImGroupSendMsgSync {
