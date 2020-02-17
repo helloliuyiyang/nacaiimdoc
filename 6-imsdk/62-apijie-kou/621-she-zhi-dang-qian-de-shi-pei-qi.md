@@ -5,7 +5,7 @@
 func SetNetworkCurMode(mode int)
 ```
 
-参数
+这个函数调用由app上层发生了WIFI，移动数据网络切换时，告诉底层SDK，网络发生了改变。
 
 
 
