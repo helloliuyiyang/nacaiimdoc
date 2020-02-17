@@ -5,5 +5,5 @@
 func SetNetworkCurMode(mode int)
 ```
 
-这个函数调用由app上层发生了WIFI，移动数据网络切换时，告诉底层SDK，网络发生了改变。可以让SDK 能快速的切换WIFI 或者4G。否则SDK 要等待30秒才能探测到发生了切换。
+这个函数调用由app上层发生了WIFI，移动数据网络切换时，告诉底层SDK，网络发生了改变。可以让SDK 能快速的切换WIFI 或者4G。否则SDK 要等待30秒才能探测到发生了切换。不需要在sdk初始启动时设置。
 
