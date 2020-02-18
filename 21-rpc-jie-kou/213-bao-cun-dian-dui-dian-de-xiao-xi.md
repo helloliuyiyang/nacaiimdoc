@@ -22,5 +22,13 @@ func SavePeerMessage(addr string, m *common.PeerMessage) (int64, int64,error) {
     msgid,offset, premsgID,err := SaveMessage(client.appid, msg.sender, client.device_ID, m)
 ```
 
+msgid,是这个消息在磁盘上存储的位置\(synckey\)
+
+premsgID,是这个消息在磁盘上存储的上一调消息的位置\(synckey\)
+
+offset,是这个消息在磁盘上存储的这个用户，连续按顺序递增，1，2，3，4 这样的一个序列号。
+
+
+
 
 
