@@ -9,7 +9,7 @@ func SavePeerMessage(addr string, m *common.PeerMessage) (int64, error) {
 }
 ```
 
-需要增加返回个Offset的参数。在成功保存消息后，需要将Offset返回给RPC 的调用方。
+需要增加返回个Offset,上一个偏移，的参数。在成功保存消息后，需要将Offset返回给RPC 的调用方。
 
 ```go
 func SavePeerMessage(addr string, m *common.PeerMessage) (int64, int64,error) {
@@ -19,7 +19,7 @@ func SavePeerMessage(addr string, m *common.PeerMessage) (int64, int64,error) {
 调用方
 
 ```go
-	msgid,offset, err := SaveMessage(client.appid, msg.sender, client.device_ID, m)
+    msgid,offset, premsgID,err := SaveMessage(client.appid, msg.sender, client.device_ID, m)
 ```
 
 
