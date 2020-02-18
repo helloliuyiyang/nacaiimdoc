@@ -6,7 +6,7 @@ func IMSdkSetBufferedServerNodeInfo(configInfo string) bool {
 
 因为客户端连接的网络是AWS 网络，这个网络很差，HTTP 有时请求不到服务端的配置信息。
 
-客户端成功从获取到IM 的服务端的配置信息后，把这个信息保存到数据库中。这个函数要在IMSdkStartup 前面调用。这个信息是一个json的字符串。示例如下
+客户端成功从获取到IM 的服务端的配置信息后，把这个信息保存到数据库中。这个函数要在IMSdkStartup 前面调用。当sdk从AWS 的服务端获取不到信息的时候，就使用这个配置信息配置的信息。这个信息是一个json的字符串。示例如下
 
 ```js
 {
