@@ -20,17 +20,9 @@ IMSendPeeerMsgWithFlag 发送消息时，可指定标志位,目前的标志位�
 
 msgflag=1 代表需要进行好友验证。
 
+当是给订单的承兑人等不需要进行好友校验的消息，请使用IMSendPeeerMsgWithFlag   msgflag 为0 或者IMSendPeeerMsg 的函数调用发送。
 
-
-
-
-
-
-
-
-
-
-
+当是给好友发送时，请使用IMSendPeeerMsgWithFlag msgflag=1  进行发送。
 
 
 
