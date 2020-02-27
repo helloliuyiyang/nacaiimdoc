@@ -34,7 +34,7 @@
     * [6.2.2  设置当前缓存的服务端的配置信息](6-imsdk/62-apijie-kou/622-she-zhi-dang-qian-huan-cun-de-fu-wu-duan-de-pei-zhi-xin-xi.md)
     * [6.2.3 获取当前的服务端的配置信息](6-imsdk/62-apijie-kou/623-huo-qu-dang-qian-de-fu-wu-duan-de-pei-zhi-xin-xi.md)
     * [6.2.4 切换账号](6-imsdk/62-apijie-kou/624-qie-huan-zhang-hao.md)
-    * 6.2.5 发送点对点消息
+    * [6.2.5 发送点对点消息](6-imsdk/62-apijie-kou/625-fa-song-dian-dui-dian-xiao-xi.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 * [8  消息同步服务器](8-xiao-xi-tong-bu-fu-wu-qi.md)
   * [8.1 通讯协议](81-tong-xun-xie-yi.md)
