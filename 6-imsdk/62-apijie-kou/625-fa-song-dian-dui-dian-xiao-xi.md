@@ -13,5 +13,5 @@ func IMSendPeeerMsgWithFlag(appmsgID int32, recvUID int64, msgType int64, msgfla
 msgLen int64, data []byte) bool
 ```
 
-这2个函数的区别是IMSendPeeerMsgWithFlag 带了msgflag,
+这2个函数的区别是IMSendPeeerMsgWithFlag 带了msgflag,发送消息的时候可指定msgflag，指定为1 就代表需要发送消息进行好友验证。
 
