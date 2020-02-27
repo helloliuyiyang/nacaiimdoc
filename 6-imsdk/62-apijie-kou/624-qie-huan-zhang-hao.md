@@ -5,5 +5,5 @@
 func IMSdkChangeNo(newNo string, passwd string, Uid int64) bool
 ```
 
-修改账号使用的
+切换账号
 
