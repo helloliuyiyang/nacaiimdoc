@@ -13,5 +13,5 @@ func IMSendPeeerMsgWithFlag(appmsgID int32, recvUID int64, msgType int64, msgfla
 msgLen int64, data []byte) bool
 ```
 
-
+这2个函数的区别是IMSendPeeerMsgWithFlag 带了msgflag,
 
