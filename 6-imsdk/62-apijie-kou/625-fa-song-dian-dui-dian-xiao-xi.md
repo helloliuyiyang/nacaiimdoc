@@ -1,9 +1,9 @@
 ### 6.2.5 发送点对点的消息
 
-调用的API 
+调用的API
 
 ```
-IMSendPeeerMsg
+func IMSendPeeerMsg(appmsgID int32, recvUID int64, msgType int64, msgLen int64, data []byte) bool {
 ```
 
 和
