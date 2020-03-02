@@ -6,7 +6,7 @@ json格式：
 
 ```
 {
-    "api_name":1,
+    "api_name":"im_send_group_msg",
     "appmsgID":1,
     "groupid":1,
     "msgType":1,
