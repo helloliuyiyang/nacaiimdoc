@@ -20,11 +20,11 @@ json格式：
 | 字段 | 含义 |
 | :--- | :--- |
 | api\_name | 调用API名称 |
-| appmsgID |  |
-| groupid |  |
-| msgType |  |
-| msgLen |  |
-| data |  |
+| appmsgID | 消息ID |
+| groupid | 群组ID |
+| msgType | 消息类型 |
+| msgLen | 消息长度 |
+| data | 发送的数据 |
 
 
 
