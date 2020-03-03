@@ -2,14 +2,14 @@
 
 当用户不在线时，IM 通过极光推送服务将消息推送到APP。推送的协议带有下面几个扩展字段。
 
-```
-	{
-	"mt":"red_packet",
-	"st":"redPacketSend",
-	"gid":"11",
-	"sync_offset":9001,
-	"uid":90011,
-	}
+```js
+    {
+    "mt":"red_packet",
+    "st":"redPacketSend",
+    "gid":"11",
+    "sync_offset":9001,
+    "uid":90011,
+    }
 ```
 
 
