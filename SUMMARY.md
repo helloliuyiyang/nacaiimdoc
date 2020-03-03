@@ -35,6 +35,7 @@
     * [6.2.3 获取当前的服务端的配置信息](6-imsdk/62-apijie-kou/623-huo-qu-dang-qian-de-fu-wu-duan-de-pei-zhi-xin-xi.md)
     * [6.2.4 切换账号](6-imsdk/62-apijie-kou/624-qie-huan-zhang-hao.md)
     * [6.2.5 发送点对点消息](6-imsdk/62-apijie-kou/625-fa-song-dian-dui-dian-xiao-xi.md)
+    * [6.2.6  日志接口](6-imsdk/62-apijie-kou/626-ri-zhi-jie-kou.md)
   * [6.3 桌面IM接口](6-imsdk/63-zhuo-mian-im-jie-kou.md)
     * [6.3.1 设置本地IM账号](6-imsdk/63-zhuo-mian-im-jie-kou/631.md)
     * [6.3.2 启动IMSDK](6-imsdk/63-zhuo-mian-im-jie-kou/632.md)
@@ -46,4 +47,8 @@
     * [8.1.1 发送点对点的聊天消息](811-fa-song-dian-dui-dian-de-liao-tian-xiao-xi.md)
     * [8.1.2 发送群组的聊天消息](812-fa-song-qun-zu-de-liao-tian-xiao-xi.md)
     * [8.1.3 发送群组聊天消息的回应](813-fa-song-qun-zu-liao-tian-xiao-xi-de-hui-ying.md)
+* [9 消息推送服务](9-xiao-xi-tui-song-fu-wu.md)
+  * [9.1 消息推送协议](91-xiao-xi-tui-song-xie-yi.md)
+
+
 
