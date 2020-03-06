@@ -26,7 +26,14 @@ json格式：
 | msgLen | 消息长度 |
 | data | 发送的数据 |
 
+```
+{
+    "api_name":"im_send_group_msg",
+    "code":200,
+    "desp":"OK",
+
+}
+```
 
 
-这个函数调用不用返回，直接等IMSDK 的上报消息进行转发给前端就好。
 
