@@ -50,4 +50,5 @@
     * [8.1.3 发送群组聊天消息的回应](813-fa-song-qun-zu-liao-tian-xiao-xi-de-hui-ying.md)
 * [9 消息推送服务](9-xiao-xi-tui-song-fu-wu.md)
   * [9.1 消息推送协议](91-xiao-xi-tui-song-xie-yi.md)
+* [9.2 消息推送设置](92-xiao-xi-tui-song-she-zhi.md)
 
