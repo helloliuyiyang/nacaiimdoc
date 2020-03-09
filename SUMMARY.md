@@ -41,6 +41,7 @@
     * [6.3.2 启动IMSDK](6-imsdk/63-zhuo-mian-im-jie-kou/632.md)
     * [6.3.3 发送点对点消息指定标记位](6-imsdk/63-zhuo-mian-im-jie-kou/633.md)
     * [6.3.4 发送群组消息](6-imsdk/63-zhuo-mian-im-jie-kou/634-she-zhi-ben-di-im-zhang-hao.md)
+    * [6.3.5 给前端通知聊天消息](6-imsdk/63-zhuo-mian-im-jie-kou/635-gei-qian-duan-tong-zhi-liao-tian-xiao-xi.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 * [8  消息同步服务器](8-xiao-xi-tong-bu-fu-wu-qi.md)
   * [8.1 通讯协议](81-tong-xun-xie-yi.md)
@@ -49,6 +50,4 @@
     * [8.1.3 发送群组聊天消息的回应](813-fa-song-qun-zu-liao-tian-xiao-xi-de-hui-ying.md)
 * [9 消息推送服务](9-xiao-xi-tui-song-fu-wu.md)
   * [9.1 消息推送协议](91-xiao-xi-tui-song-xie-yi.md)
-
-
 
