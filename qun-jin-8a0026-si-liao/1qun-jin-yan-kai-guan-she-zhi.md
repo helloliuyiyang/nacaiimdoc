@@ -17,17 +17,17 @@ URL
 请求参数
 
     type SetGroupLimitChatReq struct {
-    	//From      string `json:"from"`
-    	Uid       int64  `json:"uid"`
-    	Groupid   int64  `json:"groupid"`
-    	Limitchat int32  `json:"limitchat"`
+        //From      string `json:"from"`
+        Uid       int64  `json:"uid"`
+        Groupid   int64  `json:"groupid"`
+        Limitchat int32  `json:"limitchat"`
     }
 
 返回值
 
     type SetGroupLimitChatRes struct {
-    	Groupid   int64 `json:"groupid"`
-    	Limitchat int32 `json:"limitchat"`
+        Groupid   int64 `json:"groupid"`
+        Limitchat int32 `json:"limitchat"`
     }
 
 
