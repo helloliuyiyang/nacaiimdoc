@@ -55,6 +55,6 @@
   * [群分享](10-qun-die-dai/qun-fen-xiang.md)
     * [生成群连接](10-qun-die-dai/qun-fen-xiang/sheng-cheng-qun-lian-jie.md)
     * 发送IM邀请消息
-    * 申请加入群
+    * [申请加入群](10-qun-die-dai/qun-fen-xiang/shen-qing-jia-ru-qun.md)
     * 同意加入群
 
