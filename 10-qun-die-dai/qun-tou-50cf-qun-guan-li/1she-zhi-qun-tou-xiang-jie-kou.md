@@ -17,19 +17,19 @@ URL
 请求参数
 
     type SetGroupNameReq struct {
-    	From    string `json:"from"`
-    	Uid     int64  `json:"uid"`
-    	Groupid int64  `json:"groupid"`
-    	Name    string `json:"name"`
-    	Head    string `json:"head"`
+        From    string `json:"from"`
+        Uid     int64  `json:"uid"`
+        Groupid int64  `json:"groupid"`
+        Name    string `json:"name"`
+        Head    string `json:"head"`
     }
 
 返回值
 
     type SetGroupNameRes struct {
-    	Groupid int64  `json:"groupid"`
-    	Name    string `json:"name"`
-    	Head    string `json:"head"`
+        Groupid int64  `json:"groupid"`
+        Name    string `json:"name"`
+        Head    string `json:"head"`
     }
 
 
