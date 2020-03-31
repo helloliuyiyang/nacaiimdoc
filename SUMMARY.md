@@ -64,4 +64,8 @@
     * [4.邀请好友进入群聊发送给群主 邀请确认消息](10-qun-die-dai/qun-tou-50cf-qun-guan-li/4yao-qing-hao-you-jin-ru-qun-liao-fa-song-gei-qun-zhu-yao-qing-que-ren-xiao-xi.md)
     * [5.添加群成员](10-qun-die-dai/qun-tou-50cf-qun-guan-li/5tian-jia-qun-cheng-yuan.md)
     * [6.不同意邀请的好友加入群组](10-qun-die-dai/qun-tou-50cf-qun-guan-li/6bu-tong-yi-yao-qing-de-hao-you-jia-ru-qun-zu.md)
+  * [群禁言&私聊](qun-jin-8a0026-si-liao.md)
+    * [1.群禁言开关设置](qun-jin-8a0026-si-liao/1qun-jin-yan-kai-guan-she-zhi.md)
+    * [2.群单聊开关设置](qun-jin-8a0026-si-liao/2qun-dan-liao-kai-guan-she-zhi.md)
+    * [3.查询群单聊和禁言状态](qun-jin-8a0026-si-liao/3cha-xun-qun-dan-liao-he-jin-yan-zhuang-tai.md)
 
