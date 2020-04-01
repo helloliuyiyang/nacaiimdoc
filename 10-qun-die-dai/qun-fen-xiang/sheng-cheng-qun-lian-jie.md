@@ -18,7 +18,7 @@ URL
 
     type GroupShareReq struct {
         //连接申请人ID
-        From         int64  `json:"from"`
+        Uid         int64  `json:"uid"`
         //组id
         Groupid      int64   `json:"group_id"`
     }
