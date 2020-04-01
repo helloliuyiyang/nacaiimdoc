@@ -20,7 +20,7 @@ URL
         //连接申请人ID
         From         int64  `json:"from"`
         //组id
-        Groupid      int64   `json:"groupid"`
+        Groupid      int64   `json:"group_id"`
     }
 
 返回值
