@@ -17,10 +17,10 @@ URL
 请求参数
 
     type JoinGroupConfirmReq struct {
-        //群ID
-        GroupId         int64  `json:"group_id"`
-        //申请加入记录ID
-        JoinId      int64   `json:"join_id"`
+    	//群ID
+    	GroupId int64 `json:"group_id"`
+    	//申请ID
+    	JoinId []int64 `json:"join_id"`
     }
 
 返回值
