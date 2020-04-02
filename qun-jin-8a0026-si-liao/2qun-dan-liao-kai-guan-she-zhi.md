@@ -27,7 +27,7 @@ URL
 
     type SetGroupLimitFriendRes struct {
         Groupid     int64 `json:"groupid"`
-        Limitfriend int32 `json:"limitfriend"`
+        Limitfriend int32 `json:"limitfriend"` //0:不限制 1：限制 （单聊加好友）
     }
 
 
