@@ -27,7 +27,6 @@ URL
         LimitChat int32 `json:"limit_chat"` //禁言
         LimitFriend int32 `json:"limit_friend"` //单聊&不可加好友
         InviteSwitch int64 `json:"invite_switch"` //群邀请开关
-
     }
 
 
