@@ -17,24 +17,20 @@ URL
 请求参数
 
     type InviteFriendsToOwnerGroupReq struct {
-    	From               string               `json:"from"`
-    	Uid                int64                `json:"uid"`
-    	GroupId            int64                `json:"group_id"`             //群组id
-    	OwnerUid           int64                `json:"owner_uid"`            //群主的uid
-    	InviteReason       string               `json:"invite_reason"`        //邀请理由
-    	InviteGroupFriends []InviteGroupFriends `json:"invite_group_friends"` //朋友的uid
-    }
-
-    type InviteGroupFriends struct {
-    	FriendUid int64 `json:"friend_uid"`
+        From               string               `json:"from"`
+        Uid                int64                `json:"uid"`
+        GroupId            int64                `json:"group_id"`             //群组id
+        OwnerUid           int64                `json:"owner_uid"`            //群主的uid
+        InviteReason       string               `json:"invite_reason"`        //邀请理由
+        InviteGroupFriends []int64              `json:"invite_group_friends"` //朋友的uid
     }
 
 返回值
 
     type InviteFriendsToOwnerGroupRes struct {
-    	Uid      int64 `json:"uid"`
-    	GroupId  int64 `json:"group_id"`  //群组id
-    	OwnerUid int64 `json:"owner_uid"` //群主的uid
+        Uid      int64 `json:"uid"`
+        GroupId  int64 `json:"group_id"`  //群组id
+        OwnerUid int64 `json:"owner_uid"` //群主的uid
     }
 
 
