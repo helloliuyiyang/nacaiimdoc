@@ -19,16 +19,15 @@ URL
     type SetGroupLimitChatReq struct {
         Uid       int64  `json:"uid"`
         Groupid   int64  `json:"groupid"`
-        Limitchat int32  `json:"limitchat"` //0:不限制 1：限制 （禁言）
+        LimitChat int32  `json:"limit_chat"` //0:不限制 1：限制 （禁言）
     }
 
 返回值
 
     type SetGroupLimitChatRes struct {
         Groupid   int64 `json:"groupid"`
-        Limitchat int32 `json:"limitchat"` //0:不限制 1：限制 （禁言）
+        LimitChat int32 `json:"limit_chat"` //0:不限制 1：限制 （禁言）
     }
-
 
 
 
