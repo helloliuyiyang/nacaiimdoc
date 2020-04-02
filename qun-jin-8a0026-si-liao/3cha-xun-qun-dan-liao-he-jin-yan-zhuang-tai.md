@@ -17,15 +17,15 @@ URL
 请求参数
 
     type GetGroupSetupReq struct {
-    	Groupid   int64  `json:"groupid"`
+        Groupid   int64  `json:"groupid"`
     }
 
 返回值
 
     type GetGroupSetupRes struct {
-    	Groupid   int64 `json:"groupid"`
-    	Limitchat int32 `json:"limitchat"`
-    	Limitfriend int32 `json:"limitfriend"`
+        Groupid   int64 `json:"groupid"`
+        LimitChat int32 `json:"limit_chat"`
+        LimitFriend int32 `json:"limit_friend"`
 
     }
 
