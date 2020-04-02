@@ -21,6 +21,9 @@ URL
         Uid         int64  `json:"uid"`
         //之前分享的连接加密字符串
         Url      string   `json:"url"`
+        //进群渠道
+        MsgType      string   `json:"msg_type"`
+
     }
 
 返回值
