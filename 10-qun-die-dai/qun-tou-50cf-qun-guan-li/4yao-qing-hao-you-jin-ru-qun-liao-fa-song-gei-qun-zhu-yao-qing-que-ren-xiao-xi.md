@@ -19,7 +19,7 @@ URL
     type InviteFriendsToOwnerGroupReq struct {
         From               string               `json:"from"`
         Uid                int64                `json:"uid"`
-        GroupId            int64                `json:"group_id"`             //群组id
+        GroupId            int64                `json:"groupid"`             //群组id
         OwnerUid           int64                `json:"owner_uid"`            //群主的uid
         InviteReason       string               `json:"invite_reason"`        //邀请理由
         InviteGroupFriends []int64              `json:"invite_group_friends"` //朋友的uid
@@ -29,7 +29,7 @@ URL
 
     type InviteFriendsToOwnerGroupRes struct {
         Uid      int64 `json:"uid"`
-        GroupId  int64 `json:"group_id"`  //群组id
+        GroupId  int64 `json:"groupid"`  //群组id
         OwnerUid int64 `json:"owner_uid"` //群主的uid
     }
 

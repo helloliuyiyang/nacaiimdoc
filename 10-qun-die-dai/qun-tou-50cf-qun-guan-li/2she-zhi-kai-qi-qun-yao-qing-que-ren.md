@@ -17,16 +17,16 @@ URL
 请求参数
 
     type SetInviteSwitchReq struct {
-    	From string `json:"from"`
-    	GroupId int64 `json:"group_id"`
-    	InviteSwitch int64 `json:"invite_switch"`//0:关闭 1:打开
+        From string `json:"from"`
+        GroupId int64 `json:"groupid"`
+        InviteSwitch int64 `json:"invite_switch"`//0:关闭 1:打开
     }
 
 返回值
 
     type SetInviteSwitchRes struct {
-    	GroupId int64 `json:"group_id"`
-    	InviteSwitch int64 `json:"invite_switch"`//0:关闭 1:打开
+        GroupId int64 `json:"groupid"`
+        InviteSwitch int64 `json:"invite_switch"`//0:关闭 1:打开
     }
 
 

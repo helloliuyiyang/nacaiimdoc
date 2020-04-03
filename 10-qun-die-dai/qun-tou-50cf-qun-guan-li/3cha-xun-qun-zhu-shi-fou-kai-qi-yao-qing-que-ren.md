@@ -17,14 +17,14 @@ URL
 请求参数
 
     type GetInviteSwitchReq struct {
-    	GroupId int64 `json:"group_id"`
+        GroupId int64 `json:"groupid"`
     }
 
 返回值
 
     type GetInviteSwitchRes struct {
-    	GroupId int64 `json:"group_id"`
-    	InviteSwitch int64 `json:"invite_switch"`
+        GroupId int64 `json:"groupid"`
+        InviteSwitch int64 `json:"invite_switch"`
     }
 
 
