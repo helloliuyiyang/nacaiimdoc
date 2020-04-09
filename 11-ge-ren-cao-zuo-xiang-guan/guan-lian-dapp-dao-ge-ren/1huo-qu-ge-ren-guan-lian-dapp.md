@@ -11,20 +11,20 @@
 URL
 
 ```
-/nacaiim/getGroupDappids
+/nacaiim/getUserDappids
 ```
 
 请求参数
 
-    type GetGroupDappidsReq struct {
-       Groupid int64 `json:"groupid"`
+    type GetUserDappidsReq struct {
+       Uid  uint64 `json:"uid"`
     }
 
 返回值
 
-    type GetGroupDappidsRes struct {
-       Groupid int64 `json:"groupid"`
-       Dappids  []string `json:"dappids"`
+    type GetUserDappidsRes struct {
+       Uid  uint64 `json:"uid"`
+       Dappids []string `json:"dappids"`
     }
 
 
