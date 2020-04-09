@@ -11,25 +11,24 @@
 URL
 
 ```
-/nacaiim/GroupDappidOp
+/nacaiim/UserDappidOp
 ```
 
 请求参数
 
-    type GroupDappidOpReq struct {
-       Uid     int64 `json:"uid"`
-       Groupid int64 `json:"groupid"`
-       Op int `json:"op"` //1:添加 2:删除
-       Dappid  string `json:"dappid"` //操作对象
+    type UserDappidOpReq struct {
+       Uid  uint64 `json:"uid"`
+       Op int8 `json:"op"` //1:添加 2:删除
+       Dappid string `json:"dappid"` //操作对象
     }
 
 返回值
 
-    type GroupDappidOpRes struct {
-       Groupid int64 `json:"groupid"`
-       Op int `json:"op"` //1:添加 2:删除
+    type GetUserDappidOpRes struct {
+       Uid  uint64 `json:"uid"`
+       Op int8 `json:"op"` //1:添加 2:删除
        Dappid string `json:"dappid"` //操作对象
-       Dappids  []string `json:"dappids"` //修改后结果
+       Dappids []string `json:"dappids"`
     }
 
 
