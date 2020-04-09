@@ -68,4 +68,7 @@
     * [1.群禁言开关设置](qun-jin-8a0026-si-liao/1qun-jin-yan-kai-guan-she-zhi.md)
     * [2.群单聊开关设置](qun-jin-8a0026-si-liao/2qun-dan-liao-kai-guan-she-zhi.md)
     * [3.查询群单聊和禁言状态](qun-jin-8a0026-si-liao/3cha-xun-qun-dan-liao-he-jin-yan-zhuang-tai.md)
+  * [群关联dapp](10-qun-die-dai/qun-guan-lian-dapp.md)
+    * [1.获取群dapp](10-qun-die-dai/qun-guan-lian-dapp/1huo-qu-qun-dapp.md)
+    * [2.操作群dapp](10-qun-die-dai/qun-guan-lian-dapp/2cao-zuo-qun-dapp.md)
 
