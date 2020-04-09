@@ -71,4 +71,7 @@
   * [群关联dapp](10-qun-die-dai/qun-guan-lian-dapp.md)
     * [1.获取群dapp](10-qun-die-dai/qun-guan-lian-dapp/1huo-qu-qun-dapp.md)
     * [2.操作群dapp](10-qun-die-dai/qun-guan-lian-dapp/2cao-zuo-qun-dapp.md)
+* [11 个人操作相关](11-ge-ren-cao-zuo-xiang-guan.md)
+  * [关联dapp到个人](11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren.md)
+    * [1.获取个人关联dapp](11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/1huo-qu-ge-ren-guan-lian-dapp.md)
 
