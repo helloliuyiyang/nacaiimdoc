@@ -43,7 +43,7 @@ URL
 
 
     type GetUserDappidsRes struct {
-       Uid  uint64 `json:"uid"`
+       //Uid  uint64 `json:"uid"`
        Dapps  []DappInfo `json:"dapps"`
     }
 
