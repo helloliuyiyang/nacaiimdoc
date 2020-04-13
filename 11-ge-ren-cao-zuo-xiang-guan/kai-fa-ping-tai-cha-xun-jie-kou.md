@@ -11,7 +11,7 @@
 URL
 
 ```
-/nacaiim/getDappidLink
+/v1/server/nacaiim/inside/getDappLinkInfo
 ```
 
 请求参数
