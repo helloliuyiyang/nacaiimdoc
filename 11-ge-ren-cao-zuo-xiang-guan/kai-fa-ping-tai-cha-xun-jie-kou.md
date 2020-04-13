@@ -17,30 +17,29 @@ URL
 请求参数
 
     type DappLinkReq struct {
-    	Dappid string `json:"dappid"`
-    	//起始页
-    	StartPage int `json:"start_page"`
-    	//每页的条数
-    	PageNum int `json:"page_num"`
+        Dappid string `json:"dappid"`
+        //起始页
+        StartPage int `json:"start_page"`
+        //每页的条数
+        PageNum int `json:"page_num"`
     }
-
-
 
 返回值
 
     type DappLink struct {
-    	Id int64
-    	Name string
-    	CreateStampTime int64 `json:"create_stamp_time"`
+        Id int64
+        Name string
+        Avatar string
+        CreateStampTime int64 `json:"create_stamp_time"`
     }
 
     type DappidLinkRes struct {
-    	Dappid string `json:"dappid"`
-    	//起始页
-    	StartPage int `json:"start_page"`
-    	//每页的条数
-    	PageNum int `json:"page_num"`
-    	Links []DappLink `json:"links"`
+        Dappid string `json:"dappid"`
+        //起始页
+        StartPage int `json:"start_page"`
+        //每页的条数
+        PageNum int `json:"page_num"`
+        Links []DappLink `json:"links"`
     }
 
 
