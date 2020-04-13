@@ -22,10 +22,26 @@ URL
 
 返回值
 
+    type DappInfo struct {
+    	//dapp的id
+    	Id string `json:"id"`
+    	//logo图片
+    	Logo string `json:"logo"`
+    	//dapp的名字
+    	Name string `json:"name"`
+    	//简介
+    	Introduction string `json:"introduction"`
+    	//网站入口
+    	WebEntrance string `json:"web_entrance"`
+    	//关联状态 1为开启了关联功能 0为关闭了关联功能
+    	RelateStatus int `json:"relate_status"`
+    }
+
+
+
     type GetUserDappidsRes struct {
        Uid  uint64 `json:"uid"`
-       Dappids []string `json:"dappids"`
-       //logo name link name (db or api)
+       Dapps  []DappInfo `json:"dapps"`
     }
 
 
