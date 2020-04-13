@@ -38,11 +38,9 @@ URL
     }
 
 
-    type GroupDappidOpRes struct {
-        Groupid int64 `json:"groupid"`
-        Op int `json:"op"` //1:添加 2:删除
-        Dappid string `json:"dappid"`
-        Dapps  []DappInfo `json:"dapps"`
+    type GetGroupDappidsRes struct {
+    	Groupid int64 `json:"groupid"`
+    	Dapps  []DappInfo `json:"dapps"`
     }
 
 
