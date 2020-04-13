@@ -27,7 +27,6 @@ URL
 返回值
 
     type DappLink struct {
-        Id int64
         Name string
         Avatar string
         CreateStampTime int64 `json:"create_stamp_time"`
