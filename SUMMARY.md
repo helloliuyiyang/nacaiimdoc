@@ -75,4 +75,5 @@
   * [关联dapp到个人](11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren.md)
     * [1.获取个人dapp](11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/1huo-qu-ge-ren-guan-lian-dapp.md)
     * [2.操作个人dapp](11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/2cao-zuo-ge-ren-dapp.md)
+  * [开发平台查询接口](11-ge-ren-cao-zuo-xiang-guan/kai-fa-ping-tai-cha-xun-jie-kou.md)
 
