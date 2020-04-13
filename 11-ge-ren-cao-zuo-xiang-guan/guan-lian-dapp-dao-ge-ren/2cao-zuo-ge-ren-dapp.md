@@ -24,13 +24,29 @@ URL
 
 返回值
 
-    type GetUserDappidOpRes struct {
-       Uid  uint64 `json:"uid"`
-       Op int8 `json:"op"` //1:添加 2:删除
-       Dappid string `json:"dappid"` //操作对象
-       Dappids []string `json:"dappids"`
-       //logo name link name (db or api)
+    type DappInfo struct {
+    	//dapp的id
+    	Id string `json:"id"`
+    	//logo图片
+    	Logo string `json:"logo"`
+    	//dapp的名字
+    	Name string `json:"name"`
+    	//简介
+    	Introduction string `json:"introduction"`
+    	//网站入口
+    	WebEntrance string `json:"web_entrance"`
+    	//关联状态 1为开启了关联功能 0为关闭了关联功能
+    	RelateStatus int `json:"relate_status"`
     }
+
+    type UserDappidOpRes struct {
+    	Groupid int64 `json:"groupid"`
+    	Op int `json:"op"` //1:添加 2:删除
+    	Dappid string `json:"dappid"`
+    	Dapps  []DappInfo `json:"dapps"`
+    }
+
+
 
 
 
