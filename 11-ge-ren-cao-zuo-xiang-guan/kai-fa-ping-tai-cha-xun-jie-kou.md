@@ -16,13 +16,13 @@ URL
 
 请求参数
 
-    type GetUserDappidsReq struct {
+    type GetDappLinkReq struct {
        Dappid  string `json:"dappid"`
     }
 
 返回值
 
-    type GetUserDappidsRes struct {
+    type GetDappLinkRes struct {
        Dappid  string `json:"dappid"`
        Dappids []string `json:"dappids"`
        //logo name link name (db or api)
