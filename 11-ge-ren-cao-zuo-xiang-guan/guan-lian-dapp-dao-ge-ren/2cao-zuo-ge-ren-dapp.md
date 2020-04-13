@@ -29,6 +29,7 @@ URL
        Op int8 `json:"op"` //1:添加 2:删除
        Dappid string `json:"dappid"` //操作对象
        Dappids []string `json:"dappids"`
+       //logo name link name (db or api)
     }
 
 
