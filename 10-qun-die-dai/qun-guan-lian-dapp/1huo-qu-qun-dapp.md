@@ -25,6 +25,7 @@ URL
     type GetGroupDappidsRes struct {
        Groupid int64 `json:"groupid"`
        Dappids  []string `json:"dappids"`
+       //logo name link name (db or api)
     }
 
 

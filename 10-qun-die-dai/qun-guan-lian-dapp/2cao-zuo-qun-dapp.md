@@ -30,6 +30,7 @@ URL
        Op int `json:"op"` //1:添加 2:删除
        Dappid string `json:"dappid"` //操作对象
        Dappids  []string `json:"dappids"` //修改后结果
+       //logo name link name (db or api)
     }
 
 

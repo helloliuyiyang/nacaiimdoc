@@ -25,6 +25,7 @@ URL
     type GetUserDappidsRes struct {
        Uid  uint64 `json:"uid"`
        Dappids []string `json:"dappids"`
+       //logo name link name (db or api)
     }
 
 
