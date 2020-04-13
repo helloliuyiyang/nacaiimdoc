@@ -27,9 +27,12 @@ URL
 返回值
 
     type DappLink struct {
-        Name string
-        Avatar string
-        CreateStampTime int64 `json:"create_stamp_time"`
+        //群/用户头像
+        Avatar string `json:"avatar"`
+        //群名/用户昵称
+        Nickname string `json:"nickname"`
+        //关联时间
+        RelatedTime int64 `json:"related_time"`
     }
 
     type DappidLinkRes struct {
