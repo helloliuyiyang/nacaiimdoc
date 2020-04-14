@@ -16,7 +16,7 @@ URL
 
 请求参数
 
-    //token
+    //需要 群主 的 token 校验身份
 
     type GroupDappidOpReq struct {
        Groupid int64 `json:"groupid"`
