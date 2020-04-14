@@ -36,7 +36,13 @@ URL
         WebEntrance string `json:"web_entrance"`
         //关联状态 1为开启了关联功能 0为关闭了关联功能
         RelateStatus int `json:"relate_status"`
+
+        //上下架 1.上架 0.下架
+        Status int `json:"status"`
     }
+
+
+
 
     type UserDappidOpRes struct {
         Op int `json:"op"` //1:添加 2:删除
