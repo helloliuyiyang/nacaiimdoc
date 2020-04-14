@@ -32,7 +32,7 @@ URL
         //群名/用户昵称
         Nickname string `json:"nickname"`
 
-        Type int //1.群 2.个人
+        Type int `json:"type"` //1.群 2.个人
 
         //关联时间 时间戳
         RelatedTime int64 `json:"related_time"` 
