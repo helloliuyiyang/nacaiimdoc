@@ -35,12 +35,14 @@ URL
         WebEntrance string `json:"web_entrance"`
         //关联状态 1为开启了关联功能 0为关闭了关联功能
         RelateStatus int `json:"relate_status"`
+
+        //上下架
     }
 
 
     type GetGroupDappidsRes struct {
-    	Groupid int64 `json:"groupid"`
-    	Dapps  []DappInfo `json:"dapps"`
+        Groupid int64 `json:"groupid"`
+        Dapps  []DappInfo `json:"dapps"`
     }
 
 
