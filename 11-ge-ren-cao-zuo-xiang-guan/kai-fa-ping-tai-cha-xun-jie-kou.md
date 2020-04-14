@@ -44,5 +44,23 @@ URL
         Links []DappLink `json:"links"`
     }
 
+返回json实体
+
+```
+{
+    "code": 200,
+    "message": "OK",
+    "errorNo": 200,
+    "msgDebug": "OK",
+    "transNo": "",
+    "data": {
+        "dappid": "6",
+        "start_page": 0,
+        "page_num": 0,
+        "links": []
+    }
+}
+```
+
 
 
