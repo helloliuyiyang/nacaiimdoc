@@ -46,6 +46,7 @@ URL
 
 
     type UserDappidOpRes struct {
+        Uid    int64  `json:"uid"` //操作人
         Op int `json:"op"` //1:添加 2:删除
         Dappid string `json:"dappid"`
         Dapps  []DappInfo `json:"dapps"`
