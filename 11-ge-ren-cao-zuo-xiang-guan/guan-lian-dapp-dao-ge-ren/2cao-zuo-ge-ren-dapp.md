@@ -21,6 +21,7 @@ URL
     //不使用废弃直接使用token验证身份
 
     type UserDappidOpReq struct {
+       Uid    int64  `json:"uid"` //需要 用户 的 token 和 uid 校验身份
        Op int8 `json:"op"` //1:添加 2:删除
        Dappid string `json:"dappid"` //操作对象
     }
