@@ -16,9 +16,9 @@ URL
 
 请求参数
 
-    //需要 群主 的 token 校验身份
 
     type GroupDappidOpReq struct {
+       Uid    int64  `json:"uid"` //需要 群主 的 token 和 uid 校验身份
        Groupid int64 `json:"groupid"`
        Op int `json:"op"` //1:添加 2:删除
        Dappid  string `json:"dappid"` //操作对象
