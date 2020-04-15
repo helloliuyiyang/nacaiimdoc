@@ -16,9 +16,7 @@ URL
 
 请求参数
 
-    //使用token 
 
-    //不使用废弃直接使用token验证身份
     type GetUserDappidsReq struct {
        Uid  uint64 `json:"uid"`
     }
