@@ -38,7 +38,9 @@ URL
         //关联状态 1为开启了关联功能 0为关闭了关联功能
         RelateStatus int `json:"relate_status"`
 
-        //上下架 1.上架 0.下架
+        //关联状态 1为开启了关联功能 0为关闭了关联功能
+        RelateStatus int `json:"relate_status"`
+        //关联状态 1为开启了关联功能 0为关闭了关联功能
         Status int `json:"status"`
     }
 
