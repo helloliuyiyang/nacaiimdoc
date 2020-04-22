@@ -2,8 +2,15 @@
 
 ```
 //0:没有网络，1：WIFI 2:GPRS(移动网络)
+//str_mobile_carriers  运营商的网络 中国电信:china_telecom 中国移动:china_mobile 中国联通:china_unicom
 func SetNetworkCurMode(mode int,str_mobile_carriers string)
 ```
 
 这个函数调用由app上层发生了WIFI，移动数据网络切换时，告诉底层SDK，网络发生了改变。可以让SDK 能快速的切换WIFI 或者4G。否则SDK 要等待30秒才能探测到发生了切换。不需要在sdk初始启动时设置。
+
+
+
+
+
+
 
