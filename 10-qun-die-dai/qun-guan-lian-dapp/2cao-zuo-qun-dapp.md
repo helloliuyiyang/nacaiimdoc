@@ -37,10 +37,10 @@ URL
         //网站入口
         WebEntrance string `json:"web_entrance"`
 
-    //状态 1代表创建未提交审核 2代表提交审核(审核中) 3代表审核通过(已上架) 4代表审核未通过 5代表已下架 6代表已删除
-    Status int `xorm:"status"`
-    //关联状态 1为开启了关联功能 0为关闭了关联功能
-    RelateStatus int `json:"relate_status"
+        //状态 1代表创建未提交审核 2代表提交审核(审核中) 3代表审核通过(已上架) 4代表审核未通过 5代表已下架 6代表已删除
+        Status int `xorm:"status"`
+        //关联状态 1为开启了关联功能 0为关闭了关联功能
+        RelateStatus int `json:"relate_status"
 
     }
 
