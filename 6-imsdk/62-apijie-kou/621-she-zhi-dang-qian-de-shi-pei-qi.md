@@ -13,5 +13,7 @@ func SetNetworkCurMode(mode int,str_mobile_carriers string)
     运营商。当如果是WIFI 的时候，会忽略这个参数。
 ```
 
+这个函数在启动APP 时候，需要调用这个函数，在后面进行网络切换时也要调用这个函数。在初始的时候，调用这个函数告诉当前
 
+APP 使用的啥网络。
 
