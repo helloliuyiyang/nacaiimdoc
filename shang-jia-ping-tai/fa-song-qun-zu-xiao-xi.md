@@ -7,6 +7,7 @@ json格式：
     "api_name":"im_send_group_msg",
     "appmsgID":1,
     "repair_bill":"string",
+    "groupid":1
     "msgType":1,
     "msgLen":1,
     "data:"string"
@@ -20,6 +21,7 @@ json格式：
 | api\_name | 调用API名称 |
 | appmsgID | 消息ID |
 | repair\_bill | 工单号 |
+|  |  |
 | msgType | 消息类型 |
 | msgLen | 消息长度 |
 | data | 发送的数据 |

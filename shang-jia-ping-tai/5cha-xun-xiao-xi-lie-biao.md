@@ -4,9 +4,7 @@
 
 ```
 {
-    "api_name":"select_im_group_db,
-    "repair_bill":"string",
-    "max_line":1
+    "api_name":"select_chat_list,
 }
 ```
 
@@ -15,16 +13,13 @@
 | 字段 | 含义 |
 | :--- | :--- |
 | api\_name | 调用API名称 |
-| repair\_bill | 工单号 |
-| max\_line | 当前记录条数 |
 
 回应消息
 
 ```
 {
-    "api_name":"set_im_user_no,
+    "api_name":"select_chat_list,
     "code":200,
-    "MaxLine":1,
     “desp”：info
 }
 ```
@@ -33,5 +28,5 @@
 
 code代表这个消息的调用结果。200 为成功
 
-desp是返回的消息。消息json见 给前端通知聊天消息
+desp是返回的info数组。消息json见 给前端通知聊天消息
 
