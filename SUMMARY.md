@@ -79,5 +79,11 @@
 * [桌面工单](zhuo-mian-gong-dan.md)
   * [运营后台](yun-ying-hou-tai.md)
   * [商家平台](shang-jia-ping-tai.md)
+    * [设置本地IM账号](shang-jia-ping-tai/she-zhi-ben-di-im-zhang-hao.md)
+    * [启动IMSDK](shang-jia-ping-tai/2qi-dong-imsdk.md)
+    * [发送群组消息](shang-jia-ping-tai/fa-song-qun-zu-xiao-xi.md)
+    * [给前端通知聊天消息](shang-jia-ping-tai/gei-qian-duan-tong-zhi-liao-tian-xiao-xi.md)
+    * [查询消息列表](shang-jia-ping-tai/5cha-xun-xiao-xi-lie-biao.md)
+    * [查询历史消息记录](shang-jia-ping-tai/6cha-xun-li-shi-xiao-xi-ji-lu.md)
   * [APP](app.md)
 
