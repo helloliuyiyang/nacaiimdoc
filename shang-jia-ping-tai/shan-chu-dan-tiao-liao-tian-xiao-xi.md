@@ -1,10 +1,12 @@
-### 启动IMSDK
+### 删除单条聊天消息
 
 json结构：
 
 ```
 {
-    "api_name":"im_sdk_startup"
+    "api_name":"delete_from_group_msg_id,
+    "repair_bill":"string"，
+    “msg_id”:1
 }
 ```
 
@@ -13,15 +15,16 @@ json结构：
 | 字段 | 含义 |
 | :--- | :--- |
 | api\_name | 调用API名称 |
+| repair\_bill | 工单号 |
+| msg\_id | 消息ID |
 
 回应消息
 
 ```
 {
-    "api_name":"im_sdk_startup,
+    "api_name":"delete_from_group_msg_id,
     "code":200,
-    "desp":"OK",
-
+    "desp":"OK"
 }
 ```
 

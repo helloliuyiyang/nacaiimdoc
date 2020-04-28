@@ -1,7 +1,5 @@
 ### **设置本地IM账号**
 
-###### **func SetImUserNo\(noPass string\)    //设置本地IM账号**
-
 json结构：
 
 ```

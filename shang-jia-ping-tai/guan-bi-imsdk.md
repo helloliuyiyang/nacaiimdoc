@@ -1,10 +1,10 @@
-### 启动IMSDK
+### 关闭IMSDK
 
 json结构：
 
 ```
 {
-    "api_name":"im_sdk_startup"
+    "api_name":"im_sdk_stop"
 }
 ```
 
@@ -18,7 +18,7 @@ json结构：
 
 ```
 {
-    "api_name":"im_sdk_startup,
+    "api_name":"im_sdk_stop,
     "code":200,
     "desp":"OK",
 

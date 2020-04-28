@@ -5,7 +5,6 @@
 ```
 {
     "api_name":"select_im_group_db,
-    "im_uid":1,
     "repair_bill":"string",
     "max_line":1
 }
@@ -16,7 +15,6 @@
 | 字段 | 含义 |
 | :--- | :--- |
 | api\_name | 调用API名称 |
-| imuid | 用户ID |
 | repair\_bill | 工单号 |
 | max\_line | 当前记录条数 |
 

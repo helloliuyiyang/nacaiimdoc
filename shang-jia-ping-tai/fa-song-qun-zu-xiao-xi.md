@@ -1,7 +1,5 @@
 ### 发送群组消息
 
-func IMSendGroupMsg\(msg string\)//发送群组消息
-
 json格式：
 
 ```

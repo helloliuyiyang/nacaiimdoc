@@ -85,5 +85,8 @@
     * [给前端通知聊天消息](shang-jia-ping-tai/gei-qian-duan-tong-zhi-liao-tian-xiao-xi.md)
     * [查询消息列表](shang-jia-ping-tai/5cha-xun-xiao-xi-lie-biao.md)
     * [查询历史消息记录](shang-jia-ping-tai/6cha-xun-li-shi-xiao-xi-ji-lu.md)
+    * [关闭IMSDK](shang-jia-ping-tai/guan-bi-imsdk.md)
+    * [删除整个聊天会话](shang-jia-ping-tai/shan-chu-zheng-ge-liao-tian-hui-hua.md)
+    * [删除单条聊天消息](shang-jia-ping-tai/shan-chu-dan-tiao-liao-tian-xiao-xi.md)
   * [APP](app.md)
 
