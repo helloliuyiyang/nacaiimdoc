@@ -21,7 +21,7 @@ json格式：
 | api\_name | 调用API名称 |
 | appmsgID | 消息ID |
 | repair\_bill | 工单号 |
-|  |  |
+| groupid | 群ID |
 | msgType | 消息类型 |
 | msgLen | 消息长度 |
 | data | 发送的数据 |
