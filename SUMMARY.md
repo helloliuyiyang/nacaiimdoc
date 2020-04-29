@@ -85,6 +85,7 @@
 * [桌面工单](zhuo-mian-gong-dan.md)
   * [运营后台](yun-ying-hou-tai.md)
     * [设置本地IM账号](yun-ying-hou-tai/she-zhi-ben-di-im-zhang-hao.md)
+    * [启动IMSDK](yun-ying-hou-tai/qi-dong-imsdk.md)
   * [商家平台](shang-jia-ping-tai.md)
     * [设置本地IM账号](shang-jia-ping-tai/she-zhi-ben-di-im-zhang-hao.md)
     * [启动IMSDK](shang-jia-ping-tai/2qi-dong-imsdk.md)
