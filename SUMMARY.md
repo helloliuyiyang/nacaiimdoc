@@ -43,7 +43,7 @@
     * [6.3.4 发送群组消息](6-imsdk/63-zhuo-mian-im-jie-kou/634-she-zhi-ben-di-im-zhang-hao.md)
     * [6.3.5 给前端通知聊天消息](6-imsdk/63-zhuo-mian-im-jie-kou/635-gei-qian-duan-tong-zhi-liao-tian-xiao-xi.md)
     * [6.3.6 查询消息列表](6-imsdk/63-zhuo-mian-im-jie-kou/636-cha-xun-xiao-xi-lie-biao.md)
-    * [6.3.7 查询历史消息记录](6-imsdk/63-zhuo-mian-im-jie-kou/637-cha-xun-li-shi-xiao-xi-ji-lu.md)
+    * [6.3.7 查询群组历史消息记录](6-imsdk/63-zhuo-mian-im-jie-kou/637-cha-xun-li-shi-xiao-xi-ji-lu.md)
     * [6.3.8 删除群组聊天会话](6-imsdk/63-zhuo-mian-im-jie-kou/638-shan-chu-qun-zu-liao-tian-hui-hua.md)
     * [6.3.9 关闭IMSDK](6-imsdk/63-zhuo-mian-im-jie-kou/639-ting-zhi-imsdk.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)

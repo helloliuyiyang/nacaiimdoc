@@ -1,10 +1,10 @@
-### 查询历史消息记录
+### 6.3.7 查询群组历史消息记录
 
 json结构：
 
 ```
 {
-    "api_name":"select_chat_list"
+    "api_name":"select_im_group_db"
 }
 ```
 
@@ -20,6 +20,7 @@ json结构：
 {
     "api_name":"select_chat_list,
     "code":200,
+    “max_line”：1
     "desp":info,
 }
 ```
@@ -28,7 +29,7 @@ json结构：
 
 code代表这个消息的调用结果。200 为成功
 
+max\_line查询到对应的id
+
 desp是返回的info数组。消息json见 给前端通知聊天消息。
-
-
 
