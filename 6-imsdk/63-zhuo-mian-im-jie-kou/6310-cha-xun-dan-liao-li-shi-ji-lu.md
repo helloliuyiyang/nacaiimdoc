@@ -1,10 +1,10 @@
-### 6.3.7 查询群组历史消息记录
+### 6.3.10 查询单聊历史消息记录
 
 json结构：
 
 ```
 {
-    "api_name":"select_im_group_db"
+    "api_name":"select_im_peer_db"
 }
 ```
 
@@ -18,7 +18,7 @@ json结构：
 
 ```
 {
-    "api_name":"select_im_group_db,
+    "api_name":"select_im_peer_db,
     "code":200,
     “max_line”：1
     "desp":info,
