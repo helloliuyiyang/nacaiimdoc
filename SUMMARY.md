@@ -42,6 +42,9 @@
     * [6.3.3 发送点对点消息指定标记位](6-imsdk/63-zhuo-mian-im-jie-kou/633.md)
     * [6.3.4 发送群组消息](6-imsdk/63-zhuo-mian-im-jie-kou/634-she-zhi-ben-di-im-zhang-hao.md)
     * [6.3.5 给前端通知聊天消息](6-imsdk/63-zhuo-mian-im-jie-kou/635-gei-qian-duan-tong-zhi-liao-tian-xiao-xi.md)
+    * [6.3.6 查询消息列表](6-imsdk/63-zhuo-mian-im-jie-kou/636-cha-xun-xiao-xi-lie-biao.md)
+    * [6.3.7 查询历史消息记录](6-imsdk/63-zhuo-mian-im-jie-kou/637-cha-xun-li-shi-xiao-xi-ji-lu.md)
+    * [6.3.8 删除群组聊天会话](6-imsdk/63-zhuo-mian-im-jie-kou/638-shan-chu-qun-zu-liao-tian-hui-hua.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 * [8  消息同步服务器](8-xiao-xi-tong-bu-fu-wu-qi.md)
   * [8.1 通讯协议](81-tong-xun-xie-yi.md)
@@ -86,6 +89,6 @@
     * [查询消息列表](shang-jia-ping-tai/5cha-xun-xiao-xi-lie-biao.md)
     * [查询历史消息记录](shang-jia-ping-tai/6cha-xun-li-shi-xiao-xi-ji-lu.md)
     * [关闭IMSDK](shang-jia-ping-tai/guan-bi-imsdk.md)
-    * [删除整个聊天会话](shang-jia-ping-tai/shan-chu-zheng-ge-liao-tian-hui-hua.md)
+    * [删除群组聊天会话](shang-jia-ping-tai/shan-chu-zheng-ge-liao-tian-hui-hua.md)
   * [APP](app.md)
 
