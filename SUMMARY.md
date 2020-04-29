@@ -47,6 +47,7 @@
     * [6.3.8 删除群组聊天会话](6-imsdk/63-zhuo-mian-im-jie-kou/638-shan-chu-qun-zu-liao-tian-hui-hua.md)
     * [6.3.9 关闭IMSDK](6-imsdk/63-zhuo-mian-im-jie-kou/639-ting-zhi-imsdk.md)
     * [6.3.10 查询单聊历史记录](6-imsdk/63-zhuo-mian-im-jie-kou/6310-cha-xun-dan-liao-li-shi-ji-lu.md)
+    * [6.3.11 发送图片消息](6-imsdk/63-zhuo-mian-im-jie-kou/6311-fa-song-tu-pian-xiao-xi.md)
 * [7 im管理服务器qim](7-imguan-lifu-wu-qi-qim.md)
 * [8  消息同步服务器](8-xiao-xi-tong-bu-fu-wu-qi.md)
   * [8.1 通讯协议](81-tong-xun-xie-yi.md)
