@@ -96,4 +96,6 @@
     * [关闭IMSDK](shang-jia-ping-tai/guan-bi-imsdk.md)
     * [删除群组聊天会话](shang-jia-ping-tai/shan-chu-zheng-ge-liao-tian-hui-hua.md)
   * [APP](app.md)
+    * 用户申诉列表与详情
+    * 承兑人app申诉列表与详情
 
