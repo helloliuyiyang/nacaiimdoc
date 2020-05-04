@@ -29,15 +29,21 @@ json结构：
 }
 ```
 
-```
-//obj对象属性,原web端返回的数据结构
-{
-    "order_no":"申诉号",
-    "type":"申诉类型",
-    "status":"申诉状态"
-    ...
-}
-```
+    //obj对象属性,原web端返回的数据结构
+    type AcceptorAppeal struct {
+    	//工单状态
+    	BillStatus int `json:"billStatus"`
+    	//工单单号
+    	RepairBillNo string `json:"repairBillNo"`
+    	//im的最后更新时间
+    	ImUpdateTime string `json:"imUpdateTime"`
+    	//该工单留言的数量，用于在页面上展示用的
+    	RepairBillMessageCount int `json:"repairBillMessageCount"`
+    	//工单的会员名称
+    	SubName string `json:"subName"`
+    	//工单问题所属用户角色
+    	UserRole int `json:"userRole"`
+    }
 
 回应消息api\_name 代表当前调用的那个函数。
 
