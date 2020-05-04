@@ -79,6 +79,7 @@
 * [桌面工单](zhuo-mian-gong-dan.md)
   * [系统设计](xi-tong-mo-kuai.md)
     * [系统组网图](xi-tong-mo-kuai/xi-tong-zu-wang-tu.md)
+    * [app在法币IM群里申诉](xi-tong-mo-kuai/appzai-fa-bi-im-qun-li-shen-su.md)
   * [运营后台](yun-ying-hou-tai.md)
   * [商家平台](shang-jia-ping-tai.md)
   * [APP](app.md)
