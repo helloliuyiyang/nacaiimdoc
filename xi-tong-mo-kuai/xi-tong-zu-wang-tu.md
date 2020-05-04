@@ -6,5 +6,5 @@
 
 后端服务器，由IM服务器，qim通讯录管理服务器，工单qrepair服务。qim和qrepair服务都是http接口。
 
-
+桌面端由QT内嵌WEB VUE 组成。
 
