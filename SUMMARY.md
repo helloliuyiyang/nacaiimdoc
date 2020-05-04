@@ -82,6 +82,7 @@
     * [app在法币IM群里申诉](xi-tong-mo-kuai/appzai-fa-bi-im-qun-li-shen-su.md)
     * [app直接申诉订单](xi-tong-mo-kuai/appzhi-jie-shen-su-ding-dan.md)
     * [运营后台创建工单](xi-tong-mo-kuai/yun-ying-hou-tai-chuang-jian-gong-dan.md)
+    * [商家桌面端创建工单](xi-tong-mo-kuai/shang-jia-zhuo-mian-duan-chuang-jian-gong-dan.md)
   * [运营后台](yun-ying-hou-tai.md)
   * [商家平台](shang-jia-ping-tai.md)
   * [APP](app.md)
