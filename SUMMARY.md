@@ -77,10 +77,11 @@
     * [2.操作个人dapp](11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/2cao-zuo-ge-ren-dapp.md)
   * [开发平台查询接口](11-ge-ren-cao-zuo-xiang-guan/kai-fa-ping-tai-cha-xun-jie-kou.md)
 * [桌面工单](zhuo-mian-gong-dan.md)
+  * [系统设计](xi-tong-mo-kuai.md)
   * [运营后台](yun-ying-hou-tai.md)
   * [商家平台](shang-jia-ping-tai.md)
   * [APP](app.md)
-  * [系统模块](xi-tong-mo-kuai.md)
+
 
 
 
