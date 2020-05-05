@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>5.1.1 心跳协议 · GitBook</title>
+        <title>5.1.3 点对点的同步通知带数据 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="512-dian-dui-dian-de-tong-bu-tong-zhi.html" />
+    <link rel="next" href="../514-qun-zu-tong-bu-tong-zhi.html" />
     
     
-    <link rel="prev" href="../51-tong-xun-xie-yi.html" />
+    <link rel="prev" href="512-dian-dui-dian-de-tong-bu-tong-zhi.html" />
     
 
     </head>
@@ -362,7 +362,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1.1" data-path="511-xin-tiao-xie-yi.html">
+        <li class="chapter " data-level="1.6.1.1" data-path="511-xin-tiao-xie-yi.html">
             
                 <a href="511-xin-tiao-xie-yi.html">
             
@@ -388,7 +388,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.1.3" data-path="513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.html">
+        <li class="chapter active" data-level="1.6.1.3" data-path="513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.html">
             
                 <a href="513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.html">
             
@@ -1660,7 +1660,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >5.1.1 心跳协议</a>
+        <a href="../.." >5.1.3 点对点的同步通知带数据</a>
     </h1>
 </div>
 
@@ -1675,25 +1675,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="511--&#x5FC3;&#x8DF3;&#x534F;&#x8BAE;">5.1.1  &#x5FC3;&#x8DF3;&#x534F;&#x8BAE;</h2>
-<p>&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x901A;&#x77E5;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5FC3;&#x8DF3;&#x534F;&#x8BAE;&#xFF0C;&#x662F;&#x643A;&#x5E26;&#x4E86;&#x6570;&#x636E;&#x7684;&#xFF0C;&#x548C;&#x6211;&#x4EEC;&#x901A;&#x7528;&#x5B9A;&#x4E49;&#x7684;&#x5FC3;&#x8DF3;&#x4E0D;&#x4E00;&#x6837;&#x3002;&#x8FD9;&#x4E2A;&#x5FC3;&#x8DF3;&#x662F;&#x643A;&#x5E26;&#x4E86;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x76F4;&#x63A5;&#x4E0D;&#x65AD;&#x7684;&#x4EA4;&#x6362;&#x4E92;&#x76F8;&#x7684;&#x540C;&#x6B65;&#x6570;&#x636E;&#x7684;&#x504F;&#x79FB;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x5E26;&#x4E0A;&#x672C;&#x5730;&#x7684;&#x6570;&#x636E;&#x7684;&#x540C;&#x6B65;&#x504F;&#x79FB;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x5728;&#x5FC3;&#x8DF3;&#x56DE;&#x5E94;&#x4E2D;&#x53D1;&#x9001;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x540C;&#x6B65;&#x504F;&#x79FB;&#x3002;&#x8FD9;&#x4E2A;&#x540C;&#x6B65;&#x504F;&#x79FB;&#x7684;&#x6570;&#x636E;&#x662F;&#x6307;&#x70B9;&#x5BF9;&#x70B9;&#x7684;&#x540C;&#x6B65;&#x3002;</p>
-<p><img src="../../assets/syncNotifyProtocol.png" alt=""> 1: &#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x5FC3;&#x8DF3; PING(IM_CMD_HEART_PING=301) &#x6D88;&#x606F;&#x3002;</p>
-<p> &#x5FC3;&#x8DF3;&#x7684;PB&#x5982;&#x4E0B;</p>
-<pre><code>// &#x6D88;&#x606F;&#x7ED3;&#x6784;.
-message UserMsgSyncInfo {
-    int64 GroupId = 1;
-    int64 SyncKey = 2;
-    int64 OffSet = 3;
+                                <h2 id="513-&#x70B9;&#x5BF9;&#x70B9;&#x7684;&#x540C;&#x6B65;&#x901A;&#x77E5;&#x5E26;&#x6570;&#x636E;">5.1.3 &#x70B9;&#x5BF9;&#x70B9;&#x7684;&#x540C;&#x6B65;&#x901A;&#x77E5;&#x5E26;&#x6570;&#x636E;</h2>
+<p>&#x5F53;&#x7528;&#x6237;A &#x53D1;&#x9001;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7ED9;B&#xFF0C;&#x53D1;&#x5230;&#x63A5;&#x5165;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x63A5;&#x5165;&#x670D;&#x52A1;&#x5668;&#x6216;&#x8005;&#x8DEF;&#x7531;&#x670D;&#x52A1;&#xFF0C;&#x5C06;&#x7ED9;B &#x53D1;&#x9001;&#x4E00;&#x6761;&#x901A;&#x77E5;&#xFF0C;&#x901A;&#x77E5;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x6709;&#x6761;&#x65B0;&#x7684;&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x548C;5.1.2 &#x7684;&#x533A;&#x522B;&#x662F;,&#x8FD9;&#x4E2A;&#x540C;&#x6B65;&#x901A;&#x77E5;&#x5C31;&#x76F4;&#x63A5;&#x5E26;&#x4E86;&#x70B9;&#x5BF9;&#x70B9;&#x7684;&#x4E0B;&#x53D1;&#x6D88;&#x606F;&#x3002;&#x7531;&#x670D;&#x52A1;&#x7AEF;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x4E86;PUSH&#x3002;&#x8FD9;&#x4E2A;PUSH &#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x5931;&#x8D25;&#x4E5F;&#x6CA1;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x8FD8;&#x4F1A;&#x5BF9;&#x672C;&#x5730;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x8FDE;&#x7EED;&#xFF0C;&#x4E0D;&#x8FDE;&#x7EED;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x4F1A;&#x8FDB;&#x884C;&#x6B21;&#x62C9;&#x53D6;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x5C31;&#x76F4;&#x63A5;PUSH &#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x80FD;&#x786E;&#x4FDD;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x672C;&#x5730;&#x6D88;&#x606F;&#x662F;&#x8FDE;&#x7EED;&#x7684;&#x4E86;&#x3002;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x5BA2;&#x6237;&#x7AEF;&#x8FDB;&#x884C;&#x6B21;&#x4E3B;&#x52A8;&#x540C;&#x6B65;&#x62C9;&#x53D6;&#x3002;</p>
+<p><img src="../../assets/peerSyncNotifySeq.png" alt=""></p>
+<p>3:&#x901A;&#x77E5;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4E8B;&#x4EF6;&#x4E3A;(IM_CMD_NOTIFY_SYNC_HAS_CHATDATA=337)</p>
+<p>&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x5E26;&#x7684;PB &#x4E3A; ImClientSendMsg</p>
+<pre><code class="lang-go">message ImSyncNotifyWithData {
+<span class="hljs-keyword">int64</span> offset=<span class="hljs-number">1</span>;
+<span class="hljs-keyword">int64</span> nextSynckey=<span class="hljs-number">2</span>;
+<span class="hljs-keyword">int64</span> fromUID=<span class="hljs-number">3</span>;
+<span class="hljs-keyword">int64</span> toUID=<span class="hljs-number">4</span>;
+<span class="hljs-keyword">int32</span> timestamp=<span class="hljs-number">5</span>;
+<span class="hljs-keyword">int32</span> synckey=<span class="hljs-number">6</span>;
+<span class="hljs-keyword">int32</span> <span class="hljs-built_in">len</span>=<span class="hljs-number">7</span>;
+<span class="hljs-keyword">int32</span> msgType=<span class="hljs-number">8</span>;
+<span class="hljs-keyword">int32</span> msgFlag=<span class="hljs-number">9</span>;
+<span class="hljs-keyword">int64</span> preSynckey=<span class="hljs-number">10</span>;
+bytes content=<span class="hljs-number">11</span>;
 }
-</code></pre><p>2:&#x670D;&#x52A1;&#x7AEF;&#x56DE;&#x5E94;PONG(IM_CMD_HEART_PONG = 302)&#x6D88;&#x606F;&#x3002;</p>
-<p>&#x5FC3;&#x8DF3;&#x56DE;&#x5E94;&#x7684;PB&#x5982;&#x4E0B;</p>
-<pre><code>// &#x6D88;&#x606F;&#x7ED3;&#x6784;.
-message UserMsgSyncInfo {
-    int64 GroupId = 1;
-    int64 SyncKey = 2;
-    int64 OffSet = 3;
-}
-</code></pre><table>
+</code></pre>
+<p> &#x534F;&#x8BAE;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E3A;</p>
+<p>gopath/src/nacaiim/protoc/msg.proto</p>
+<table>
 <thead>
 <tr>
 <th style="text-align:left">&#x5B57;&#x6BB5;</th>
@@ -1702,16 +1707,48 @@ message UserMsgSyncInfo {
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Groupid</td>
-<td style="text-align:left">&#x8FD9;&#x91CC;&#x4E3A;0&#xFF0C;&#x4EE3;&#x8868;&#x662F;&#x4E2A;&#x4EBA;&#x70B9;&#x5BF9;&#x70B9;&#xFF0C;pb3.0&#x5BF9;0&#x503C;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x7F16;&#x7801;</td>
+<td style="text-align:left">offset</td>
+<td style="text-align:left">&#x7528;&#x6237;&#x7684;&#x6D88;&#x606F;&#x504F;&#x79FB;</td>
 </tr>
 <tr>
-<td style="text-align:left">SyncKey</td>
-<td style="text-align:left">&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x5168;&#x5C40;&#x7684;&#x6D88;&#x606F;&#x540C;&#x6B65;key</td>
+<td style="text-align:left">nextSynckey</td>
+<td style="text-align:left">&#x4E0B;&#x4E00;&#x4E2A;&#x540C;&#x6B65;&#x7684;&#x504F;&#x79FB;</td>
 </tr>
 <tr>
-<td style="text-align:left">Offset</td>
-<td style="text-align:left">&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x4E2A;&#x4EBA;&#x7684;&#x6D88;&#x606F;&#x7684;&#x504F;&#x79FB;id,&#x662F;&#x8FDE;&#x7EED;&#x7684;</td>
+<td style="text-align:left">fromUID</td>
+<td style="text-align:left">&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;&#x7528;&#x6237;ID</td>
+</tr>
+<tr>
+<td style="text-align:left">toUID</td>
+<td style="text-align:left">&#x63A5;&#x6536;&#x6D88;&#x606F;&#x7684;&#x7528;&#x6237;ID</td>
+</tr>
+<tr>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td style="text-align:left">synckey</td>
+<td style="text-align:left">&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x7684;&#x540C;&#x6B65;&#x7684;key</td>
+</tr>
+<tr>
+<td style="text-align:left">len</td>
+<td style="text-align:left">&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x7684;&#x5185;&#x5BB9;&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td style="text-align:left">msgType</td>
+<td style="text-align:left">&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x7684;&#x7C7B;&#x578B;msg</td>
+</tr>
+<tr>
+<td style="text-align:left">msgFlag</td>
+<td style="text-align:left">&#x6D88;&#x606F;&#x7684;&#x6807;&#x8BB0;</td>
+</tr>
+<tr>
+<td style="text-align:left">preSyncKey</td>
+<td style="text-align:left">&#x524D;&#x4E00;&#x4E2A;&#x540C;&#x6B65;KEY</td>
+</tr>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">&#x6D88;&#x606F;&#x7684;&#x5185;&#x5BB9;</td>
 </tr>
 </tbody>
 </table>
@@ -1742,12 +1779,12 @@ message UserMsgSyncInfo {
 
             
                 
-                <a href="../51-tong-xun-xie-yi.html" class="navigation navigation-prev " aria-label="Previous page: 5.1 通讯协议">
+                <a href="512-dian-dui-dian-de-tong-bu-tong-zhi.html" class="navigation navigation-prev " aria-label="Previous page: 5.1.2 点对点的同步通知">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="512-dian-dui-dian-de-tong-bu-tong-zhi.html" class="navigation navigation-next " aria-label="Next page: 5.1.2 点对点的同步通知">
+                <a href="../514-qun-zu-tong-bu-tong-zhi.html" class="navigation navigation-next " aria-label="Next page: 5.1.4 群组同步通知">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1758,7 +1795,7 @@ message UserMsgSyncInfo {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.1.1 心跳协议","level":"1.6.1.1","depth":3,"next":{"title":"5.1.2 点对点的同步通知","level":"1.6.1.2","depth":3,"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.md","ref":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.md","articles":[]},"previous":{"title":"5.1 通讯协议","level":"1.6.1","depth":2,"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi.md","ref":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi.md","articles":[{"title":"5.1.1 心跳协议","level":"1.6.1.1","depth":3,"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/511-xin-tiao-xie-yi.md","ref":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/511-xin-tiao-xie-yi.md","articles":[]},{"title":"5.1.2 点对点的同步通知","level":"1.6.1.2","depth":3,"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.md","ref":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.md","articles":[]},{"title":"5.1.3 点对点的同步通知带数据","level":"1.6.1.3","depth":3,"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.md","ref":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.md","articles":[]},{"title":"5.1.4 群组同步通知","level":"1.6.1.4","depth":3,"path":"5-tong-zhi-fu-wu-qi/514-qun-zu-tong-bu-tong-zhi.md","ref":"5-tong-zhi-fu-wu-qi/514-qun-zu-tong-bu-tong-zhi.md","articles":[]},{"title":"5.1.5 群组同步通知带数据","level":"1.6.1.5","depth":3,"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/515-qun-zu-tong-bu-tong-zhi-dai-shu-ju.md","ref":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/515-qun-zu-tong-bu-tong-zhi-dai-shu-ju.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/511-xin-tiao-xie-yi.md","mtime":"2020-04-22T03:42:37.287Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-05T06:10:53.128Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.1.3 点对点的同步通知带数据","level":"1.6.1.3","depth":3,"next":{"title":"5.1.4 群组同步通知","level":"1.6.1.4","depth":3,"path":"5-tong-zhi-fu-wu-qi/514-qun-zu-tong-bu-tong-zhi.md","ref":"5-tong-zhi-fu-wu-qi/514-qun-zu-tong-bu-tong-zhi.md","articles":[]},"previous":{"title":"5.1.2 点对点的同步通知","level":"1.6.1.2","depth":3,"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.md","ref":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.md","mtime":"2020-04-22T03:42:37.288Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-05T06:10:53.128Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
