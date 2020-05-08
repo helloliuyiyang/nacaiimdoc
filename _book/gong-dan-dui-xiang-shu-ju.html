@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>工单对象数据 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1-xi-tong-she-ji.html" />
+    <link rel="next" href="gong-dan-zhuang-tai-shu-ju.html" />
     
+    
+    <link rel="prev" href="gong-dan-tui-song-xiao-xi.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -1645,7 +1647,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.13.4.7.1" data-path="gong-dan-dui-xiang-shu-ju.html">
+        <li class="chapter active" data-level="1.13.4.7.1" data-path="gong-dan-dui-xiang-shu-ju.html">
             
                 <a href="gong-dan-dui-xiang-shu-ju.html">
             
@@ -1716,7 +1718,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >工单对象数据</a>
     </h1>
 </div>
 
@@ -1731,10 +1733,113 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
-<p>&#x672C;&#x6587;&#x6863;&#x662F;nacaiim&#x7684;&#x8BBE;&#x8BA1;&#x6587;&#x6863;&#x548C;&#x63A5;&#x53E3;&#x6587;&#x6863;&#x7B49;.</p>
-<p>2020-01-30 (by ternence)</p>
+                                <p>&#x5DE5;&#x5355;&#x5BF9;&#x8C61;&#x6570;&#x636E;</p>
+<pre><code>//&#x5DE5;&#x5355;&#x8868;
+type Order struct {
+    //&#x5DE5;&#x5355;ID
+    Orderid  string `json:&quot;repair_bill_no&quot; xorm:&quot;repair_bill_no pk char(24) notnull&quot;` //&#x5DE5;&#x5355;&#x53F7;
+    BillType int    `json:&quot;bill_type&quot; xorm:&quot;bill_type&quot;`
 
+    HandleImgs   string `json:&quot;handle_imgs&quot; xorm:&quot;handle_imgs&quot;`       //&#x5904;&#x7406;&#x56FE;&#x7247;
+    HandleRemark string `json:&quot;handle_remark&quot; xorm:&quot;handle_remark&quot;`   //&#x5904;&#x7406;&#x7ED3;&#x679C;
+    Priority     int    `json:&quot;priority&quot; xorm:&quot;priority&quot;`             //&#x4F18;&#x5148;&#x7EA7;
+    CreateTime   int64  `json:&quot;create_time&quot; xorm:&quot;create_time index&quot;` //&#x521B;&#x5EFA;&#x65F6;&#x95F4; notnull
+
+    //&#x5DE5;&#x5355;&#x53D7;&#x7406;&#x8BFB;&#x53D6;&#x6807;&#x5FD7;
+    ReceiverRead int `json:&quot;receiver_read&quot; xorm:&quot;receiver_read&quot;`
+
+    Content   string `json:&quot;content&quot; xorm:&quot;content&quot;`       //&#x5DE5;&#x5355;&#x5185;&#x5BB9;
+    ImagesUrl string `json:&quot;images_url&quot; xorm:&quot;images_url&quot;` //&#x56FE;&#x7247;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;
+
+    TradeId       string `json:&quot;trade_id&quot; xorm:&quot;trade_id&quot;`             //&#x8BA2;&#x5355;&#x53F7;
+    RepairTradeId string `json:&quot;repairTradeId&quot; xorm:&quot;repair_trade_id&quot;` //&#x8865;&#x5355;&#x53F7;
+    AmountRmb     int64  `json:&quot;amount_rmb&quot; xorm:&quot;amount_rmb&quot;`         //&#x5145;&#x503C;&#x91D1;&#x989D;
+    CreatorRead   int    `json:&quot;creator_read&quot; xorm:&quot;creator_read&quot;`     //&#x5DE5;&#x5355;&#x53D1;&#x8D77;&#x4EBA;&#x8BFB;&#x53D6;&#x6807;&#x5FD7;
+
+    AllocationTime int64 `json:&quot;allocation_time&quot; xorm:&quot;allocation_time&quot;`   //&#x5DE5;&#x5355;&#x5206;&#x914D;&#x5BA2;&#x670D;&#x65F6;&#x95F4;
+    FinishedTime   int64 `json:&quot;finished_time&quot; xorm:&quot;finished_time index&quot;` //&#x5DE5;&#x5355;&#x5B8C;&#x7ED3;&#x65F6;&#x95F4;
+    UpdateTime     int64 `json:&quot;update_time&quot; xorm:&quot;update_time&quot;`           //&#x66F4;&#x65B0;&#x65F6;&#x95F4;
+    //&#x6536;&#x6B3E;&#x8D26;&#x6237;
+    PayeeAccount string `json:&quot;payee_account&quot; xorm:&quot;payee_account&quot;`
+    //&#x5DE5;&#x5355;&#x5B8C;&#x7ED3;&#x539F;&#x56E0;
+    FinishReason string `json:&quot;finish_reason&quot;  xorm:&quot;finish_reason&quot;`
+
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x539F;&#x59CB;&#x8BA2;&#x5355;&#x7684;&#x7C7B;&#x578B;
+    OrderType int `json:&quot;order_type&quot; xorm:&quot;order_type index&quot;`
+    //&#x5DE5;&#x5355;&#x72B6;&#x6001;
+    Bill_status int `json:&quot;bill_status&quot; xorm:&quot;bill_status index&quot;`
+    //------------------------------------------------
+    //&#x5DE5;&#x5355;&#x53D1;&#x8D77;&#x4EBA;&#x94FE;&#x8D26;&#x53F7;
+    CreatorEos string `json:&quot;creator_eos&quot; xorm:&quot;creator_eos&quot;`
+    //&#x5DE5;&#x5355;&#x53D1;&#x8D77;&#x4EBA;&#x7684;&#x5B50;&#x8D26;&#x53F7;
+    CreatorSub      string `json:&quot;creator_sub&quot; xorm:&quot;creator_sub&quot;`
+    CreatorAccount  string `json:&quot;creator_account&quot; xorm:&quot;creator_account&quot;`   //&#x5DE5;&#x5355;&#x53D1;&#x8D77;&#x4EBA;
+    CreatorNickname string `json:&quot;creator_nickname&quot; xorm:&quot;creator_nickname&quot;` //&#x5DE5;&#x5355;&#x53D1;&#x8D77;&#x4EBA;&#x540D;&#x79F0;
+    CreatorRole     int    `json:&quot;creator_role&quot; xorm:&quot;creator_role&quot;`         //&#x5DE5;&#x5355;&#x53D1;&#x8D77;&#x4EBA;&#x89D2;&#x8272;
+    //----------------------------------------------
+    //to
+    ReceiverAccount  string `json:&quot;receiver_account&quot; xorm:&quot;receiver_account index&quot;` //&#x5DE5;&#x5355;&#x53D7;&#x7406;&#x4EBA;&#x8D26;&#x53F7;
+    ReceiverNickname string `json:&quot;receiver_nickname&quot; xorm:&quot;receiver_nickname&quot;`     //&#x5DE5;&#x5355;&#x53D7;&#x7406;&#x4EBA;&#x6635;&#x79F0;
+    //&#x5DE5;&#x5355;&#x53D7;&#x7406;&#x4EBA;&#x94FE;&#x8D26;&#x53F7;(&#x8FD9;&#x4E2A;&#x57FA;&#x672C;&#x4E0A;&#x6CA1;&#x6709;&#x94FE;&#x8D26;&#x53F7;)
+    ReceiverEos string `json:&quot;receiver_eos&quot; xorm:&quot;receiver_eos&quot;`
+    //------------------------------------------------------
+    UserRole int    `json:&quot;user_role&quot; xorm:&quot;user_role&quot;` //&#x95EE;&#x9898;&#x6240;&#x5C5E;&#x89D2;&#x8272;
+    UserName string `json:&quot;user_name&quot; xorm:&quot;user_name&quot;` //&#x95EE;&#x9898;&#x6240;&#x5C5E;&#x8D26;&#x53F7;&#x540D;
+    UserEOS  string `json:&quot;user_eos&quot; xorm:&quot;user_eos&quot;`   //&#x95EE;&#x9898;&#x6240;&#x5C5E;&#x8D26;&#x53F7;EOS&#x540D;
+    //&#x5B50;&#x8D26;&#x53F7;
+    SubName string `json:&quot;sub_name&quot; xorm:&quot;sub_name&quot;`
+    //&#x4F1A;&#x5458;&#x540D;
+    SubMember string `json:&quot;sub_member&quot; xorm:&quot;sub_member&quot;`
+    //---------------------------------------------------------
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x53C2;&#x4E0E;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4EBA; &#x89D2;&#x8272;
+    JoinUserRole int `json:&quot;join_user_role&quot; xorm:&quot;join_user_role&quot;`
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x53C2;&#x4E0E;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4EBA; &#x8D26;&#x53F7;
+    JoinUserName string `json:&quot;join_user_name&quot; xorm:&quot;join_user_name&quot;`
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x53C2;&#x4E0E;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4EBA; EOS&#x8D26;&#x53F7;
+    JoinUserEOS string `json:&quot;join_user_eos&quot; xorm:&quot;join_user_eos&quot;`
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x53C2;&#x4E0E;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4EBA;&#x5B50;&#x8D26;&#x53F7;
+    JoinSubName string `json:&quot;join_sub_name&quot; xorm:&quot;join_sub_name&quot;`
+    //--------------------------------------------------------------
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x53C2;&#x4E0E;&#x7684; &#x666E;&#x901A;&#x7528;&#x6237; &#x89D2;&#x8272;
+    JoinUserAccountRole int `json:&quot;join_user_account_role&quot; xorm:&quot;join_user_account_role&quot;`
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x53C2;&#x4E0E;&#x7684; &#x666E;&#x901A;&#x7528;&#x6237;&#x5DE5;&#x5355; &#x8D26;&#x53F7;
+    JoinUserAccountName string `json:&quot;join_user_account_name&quot; xorm:&quot;join_user_account_name&quot;`
+    //&#x8FD9;&#x4E2A;&#x5DE5;&#x5355;&#x53C2;&#x4E0E;&#x7684; &#x666E;&#x901A;&#x7528;&#x6237;&#x7684; EOS&#x8D26;&#x53F7;
+    JoinUserAccountEOS string `json:&quot;join_user_account_eos&quot; xorm:&quot;join_user_account_eos&quot;`
+    //--------------------------------------------------------------
+    Eosno string `json:&quot;eosno&quot; xorm:&quot;eosno char(24) notnull index&quot;`
+    //&#x5B50;&#x8D26;&#x53F7;
+    FromSubNo string `json:&quot;from_sub_no&quot; xorm:&quot;from_sub_no&quot;`
+    //&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x5355;&#x65F6;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x89D2;&#x8272;
+    From_user_role int `json:&quot;from_user_role&quot; xorm:&quot;from_user_role&quot;`
+    //&#x8BA2;&#x5355;&#x7684;&#x5BF9;&#x7AEF;&#x7528;&#x6237;
+    To_no string `json:&quot;to_no&quot; xorm:&quot;to_no char(24) notnull index&quot;`
+    //&#x5BF9;&#x7AEF;&#x7528;&#x6237;&#x7684;&#x89D2;&#x8272;
+    To_no_role int `json:&quot;to_no_role&quot; xorm:&quot;to_no_role&quot;`
+    //&#x5173;&#x8054;&#x7684;&#x5355;&#x53F7;
+    PeerOrderNo string `json:&quot;peer_order_no&quot; xorm:&quot;peer_order_no char(24) notnull&quot;`
+    //&#x8865;&#x5355;&#x7684;&#x539F;&#x8BA2;&#x5355;id
+    RepairOriginOrderid string `json:&quot;repair_origin_orderid&quot; xorm:&quot;repair_origin_orderid char(24) notnull default &apos;&apos;&quot;`
+    //------------------------------------------------------------------------
+    //from&#x7684;&#x8D26;&#x53F7;
+    FromAccount string `json:&quot;from_account&quot; xorm:&quot;from_account index&quot;`
+    //to&#x7684;&#x8D26;&#x53F7;
+    ToAccount string `json:&quot;to_account&quot; xorm:&quot;to_account index&quot;`
+    //----------------------------------------------------------------------
+    //&#x5F53;&#x524D;&#x5DE5;&#x5355;&#x7684;&#x5546;&#x5BB6;
+    CurMerchjant string `json:&quot;cur_merchant&quot; xorm:&quot;cur_merchant index&quot;`
+    //&#x5F53;&#x524D;&#x5DE5;&#x5355;&#x7684;&#x5546;&#x5BB6;&#x7684;&#x5B50;&#x8D26;&#x53F7;
+    CurMerchjantSub string `json:&quot;cur_merchant_sub&quot; xorm:&quot;cur_merchant_sub index&quot;`
+    //&#x5F53;&#x524D;&#x5546;&#x5BB6;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x8FDB;&#x5165;&#x4F1A;&#x8BDD;&#x6807;&#x8BB0;
+    CurMerchantJoinFlag int `json:&quot;cur_merchant_join_flag&quot; xorm:&quot;cur_merchant_join_flag&quot;`
+    //&#x5F53;&#x524D;&#x5DE5;&#x5355;&#x7684;&#x627F;&#x5151;&#x4EBA;
+    CurAccepter string `json:&quot;cur_acceptor&quot; xorm:&quot;cur_acceptor index&quot;`
+    //&#x5F53;&#x524D;&#x5DE5;&#x5355;&#x7684;&#x666E;&#x901A;&#x7528;&#x6237;
+    UserAccount string `json:&quot;user_account&quot; xorm:&quot;user_account&quot;`
+    //&#x7FA4;&#x7EC4;id
+    Groupid int64 `json:&quot;groupid&quot; xorm:&quot;groupid&quot;`
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -1761,8 +1866,12 @@
 
             
                 
+                <a href="gong-dan-tui-song-xiao-xi.html" class="navigation navigation-prev " aria-label="Previous page: 工单推送消息">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="1-xi-tong-she-ji.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1 系统设计">
+                
+                <a href="gong-dan-zhuang-tai-shu-ju.html" class="navigation navigation-next " aria-label="Next page: 工单状态数据">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1773,7 +1882,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"1 系统设计","level":"1.2","depth":1,"path":"1-xi-tong-she-ji.md","ref":"1-xi-tong-she-ji.md","articles":[{"title":"1.1 部署图","level":"1.2.1","depth":2,"path":"11-bu-shu-tu.md","ref":"11-bu-shu-tu.md","articles":[]},{"title":"1.2 点对点发送消息的流程","level":"1.2.2","depth":2,"path":"12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.md","ref":"12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.md","articles":[]},{"title":"1.3 消息的存储结构","level":"1.2.3","depth":2,"path":"13-xiao-xi-de-cun-chu-jie-gou.md","ref":"13-xiao-xi-de-cun-chu-jie-gou.md","articles":[]},{"title":"1.4 系统启动","level":"1.2.4","depth":2,"path":"14-xi-tong-qi-dong.md","ref":"14-xi-tong-qi-dong.md","articles":[]},{"title":"1.5 服务器使用的端口","level":"1.2.5","depth":2,"path":"15-fu-wu-qi-shi-yong-de-duan-kou.md","ref":"15-fu-wu-qi-shi-yong-de-duan-kou.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-04-30T02:34:25.735Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T13:24:34.717Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"工单对象数据","level":"1.13.4.7.1","depth":4,"next":{"title":"工单状态数据","level":"1.13.4.7.2","depth":4,"path":"gong-dan-zhuang-tai-shu-ju.md","ref":"gong-dan-zhuang-tai-shu-ju.md","articles":[]},"previous":{"title":"工单推送消息","level":"1.13.4.7","depth":3,"path":"gong-dan-tui-song-xiao-xi.md","ref":"gong-dan-tui-song-xiao-xi.md","articles":[{"title":"工单对象数据","level":"1.13.4.7.1","depth":4,"path":"gong-dan-dui-xiang-shu-ju.md","ref":"gong-dan-dui-xiang-shu-ju.md","articles":[]},{"title":"工单状态数据","level":"1.13.4.7.2","depth":4,"path":"gong-dan-zhuang-tai-shu-ju.md","ref":"gong-dan-zhuang-tai-shu-ju.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gong-dan-dui-xiang-shu-ju.md","mtime":"2020-05-06T02:36:12.132Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T13:24:34.717Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
