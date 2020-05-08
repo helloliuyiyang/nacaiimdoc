@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>工单状态数据 · GitBook</title>
+        <title>1.3 消息的存储结构 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="app/yong-hu-shen-su-jie-kou.html" />
+    <link rel="next" href="14-xi-tong-qi-dong.html" />
     
     
-    <link rel="prev" href="gong-dan-dui-xiang-shu-ju.html" />
+    <link rel="prev" href="12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.html" />
     
 
     </head>
@@ -142,7 +142,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="13-xiao-xi-de-cun-chu-jie-gou.html">
+        <li class="chapter active" data-level="1.2.3" data-path="13-xiao-xi-de-cun-chu-jie-gou.html">
             
                 <a href="13-xiao-xi-de-cun-chu-jie-gou.html">
             
@@ -1555,7 +1555,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.13.4.1" data-path="app/yong-hu-shen-su-lie-biao-yu-xiang-qing.html">
+        <li class="chapter " data-level="1.13.4.1" data-path="app/yong-hu-shen-su-jie-kou.html">
+            
+                <a href="app/yong-hu-shen-su-jie-kou.html">
+            
+                    
+                    用户申诉接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.2" data-path="app/yong-hu-shen-su-lie-biao-yu-xiang-qing.html">
             
                 <a href="app/yong-hu-shen-su-lie-biao-yu-xiang-qing.html">
             
@@ -1568,7 +1581,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.4.2" data-path="app/yong-hu-shen-su-xiang-qing.html">
+        <li class="chapter " data-level="1.13.4.3" data-path="app/yong-hu-shen-su-xiang-qing.html">
             
                 <a href="app/yong-hu-shen-su-xiang-qing.html">
             
@@ -1581,7 +1594,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.4.3" data-path="app/cheng-dui-ren-shen-su-lie-biao.html">
+        <li class="chapter " data-level="1.13.4.4" data-path="app/cheng-dui-ren-shen-su-lie-biao.html">
             
                 <a href="app/cheng-dui-ren-shen-su-lie-biao.html">
             
@@ -1594,7 +1607,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.4.4" data-path="app/cheng-dui-ren-shen-su-xiang-qing.html">
+        <li class="chapter " data-level="1.13.4.5" data-path="app/cheng-dui-ren-shen-su-xiang-qing.html">
             
                 <a href="app/cheng-dui-ren-shen-su-xiang-qing.html">
             
@@ -1607,7 +1620,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13.4.5" data-path="gong-dan-tui-song-xiao-xi.html">
+        <li class="chapter " data-level="1.13.4.6" data-path="gong-dan-tui-song-xiao-xi.html">
             
                 <a href="gong-dan-tui-song-xiao-xi.html">
             
@@ -1621,7 +1634,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.13.4.5.1" data-path="gong-dan-dui-xiang-shu-ju.html">
+        <li class="chapter " data-level="1.13.4.6.1" data-path="gong-dan-dui-xiang-shu-ju.html">
             
                 <a href="gong-dan-dui-xiang-shu-ju.html">
             
@@ -1634,7 +1647,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.13.4.5.2" data-path="gong-dan-zhuang-tai-shu-ju.html">
+        <li class="chapter " data-level="1.13.4.6.2" data-path="gong-dan-zhuang-tai-shu-ju.html">
             
                 <a href="gong-dan-zhuang-tai-shu-ju.html">
             
@@ -1649,19 +1662,6 @@
     
 
             </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13.4.6" data-path="app/yong-hu-shen-su-jie-kou.html">
-            
-                <a href="app/yong-hu-shen-su-jie-kou.html">
-            
-                    
-                    用户申诉接口
-            
-                </a>
-            
-
             
         </li>
     
@@ -1705,7 +1705,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >工单状态数据</a>
+        <a href="." >1.3 消息的存储结构</a>
     </h1>
 </div>
 
@@ -1720,17 +1720,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x5DE5;&#x5355;&#x72B6;&#x6001;&#x6570;&#x636E;</p>
-<pre><code>type DBOrderStatus struct {
-    Orderid string `json:&quot;orderid&quot; xorm:&quot;orderid pk char(24) notnull unique&quot;`
-    //&#x8FD9;&#x4E2A;&#x8BA2;&#x5355;&#x7684;&#x72B6;&#x6001;
-    OrderStatus int `json:&quot;order_status&quot; xorm:&quot;order_status index&quot;`
-    //&#x4E0A;&#x4E00;&#x4E2A;&#x72B6;&#x6001;
-    PreOrderStatus int `json:&quot;pre_order_status&quot; xorm:&quot;pre_order_status&quot;`
-    //&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x65F6;&#x95F4;&#x6233;-30
-    StatusTime int64 `json:&quot;status_time&quot; xorm:&quot;status_time&quot;`
-}
-</code></pre>
+                                <h2 id="13-&#x6D88;&#x606F;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;">1.3 &#x6D88;&#x606F;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;</h2>
+<p><img src="assets/chatMsgStorageStruct.png" alt=""></p>
+<p>&#x4E0A;&#x56FE;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x6D88;&#x606F;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#xFF0C;pre-msgid  &#x90FD;&#x662F;&#x6307;&#x5411;&#x4E0A;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x7684;msgid,&#x7C7B;&#x4F3C;&#x4E00;&#x4E2A;&#x5355;&#x94FE;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x3002;</p>
+<p>offset&#x662F;&#x4E00;&#x4E2A;&#x9012;&#x589E;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x4E0A;&#x56FE;&#x4EE3;&#x8868;&#x8FD9;&#x4E2A;&#x7528;&#x6237;1&#xFF0C;2&#xFF0C;3&#x7684;3&#x6761;&#x8FDE;&#x7EED;&#x6D88;&#x606F;&#x7684;&#x7ED3;&#x6784;.</p>
+
                                 
                                 </section>
                             
@@ -1757,12 +1751,12 @@
 
             
                 
-                <a href="gong-dan-dui-xiang-shu-ju.html" class="navigation navigation-prev " aria-label="Previous page: 工单对象数据">
+                <a href="12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.html" class="navigation navigation-prev " aria-label="Previous page: 1.2 点对点发送消息的流程">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="app/yong-hu-shen-su-jie-kou.html" class="navigation navigation-next " aria-label="Next page: 用户申诉接口">
+                <a href="14-xi-tong-qi-dong.html" class="navigation navigation-next " aria-label="Next page: 1.4 系统启动">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1773,7 +1767,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"工单状态数据","level":"1.13.4.5.2","depth":4,"next":{"title":"用户申诉接口","level":"1.13.4.6","depth":3,"path":"app/yong-hu-shen-su-jie-kou.md","ref":"app/yong-hu-shen-su-jie-kou.md","articles":[]},"previous":{"title":"工单对象数据","level":"1.13.4.5.1","depth":4,"path":"gong-dan-dui-xiang-shu-ju.md","ref":"gong-dan-dui-xiang-shu-ju.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gong-dan-zhuang-tai-shu-ju.md","mtime":"2020-05-06T02:36:12.132Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-07T06:48:54.864Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.3 消息的存储结构","level":"1.2.3","depth":2,"next":{"title":"1.4 系统启动","level":"1.2.4","depth":2,"path":"14-xi-tong-qi-dong.md","ref":"14-xi-tong-qi-dong.md","articles":[]},"previous":{"title":"1.2 点对点发送消息的流程","level":"1.2.2","depth":2,"path":"12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.md","ref":"12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"13-xiao-xi-de-cun-chu-jie-gou.md","mtime":"2020-04-30T02:34:25.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-07T06:48:54.864Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
