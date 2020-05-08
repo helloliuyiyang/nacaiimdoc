@@ -1,56 +1,60 @@
-### **用户申诉列表**
+### 用户申诉列表
 
-json结构：
+所属服务：repair
 
-```
-{
-    "api_name":"user_appeal_list,
-    "imuid":1
-    "page":1
-    "size":1
-}
-```
+提供对象：钱包app
 
-信息字段含义：
+开发者：cary
 
-| 字段 | 含义 |
-| :--- | :--- |
-| api\_name | 调用API名称 |
-| imuid | 用户ID |
-| page | 分页,第一页为1 |
-| size | 单页数量 |
+报错频率：
 
-回应消息
+URL
 
 ```
-{
-    "api_name":"user_appeal_list,
-    "code":200,
-    "data":[obj,obj],
-    "desp":""
-
-}
+/repair/appUser/queryRepairList
 ```
 
-    //obj对象属性,,原web端返回的数据结构
-    type UserAppeal struct {
-    	//工单状态
-    	BillStatus int `json:"billStatus"`
-    	//工单单号
-    	RepairBillNo string `json:"repairBillNo"`
-    	//im的最后更新时间
-    	ImUpdateTime string `json:"imUpdateTime"`
-    	//该工单留言的数量，用于在页面上展示用的
-    	RepairBillMessageCount int `json:"repairBillMessageCount"`
-    	//工单的会员名称
-    	SubName string `json:"subName"`
-    	//工单问题所属用户角色
-    	UserRole int `json:"userRole"`
+请求参数
+
+    type UserAccountRepairBillQueryReq struct {
+        From        string `json:"from"`
+        CurrentPage int    `json:"currentPage"`
+        PageSize    int    `json:"pageSize"`
     }
 
-回应消息api\_name 代表当前调用的那个函数。
+返回值
 
-code代表这个消息的调用结果。200 为成功
+    //工单响应结构体
+    type UserAccountRepairBillQueryRes struct {
+        //总条数
+        TotalRecordNum int64 `json:"total_record_num"`
+        //开始位置
+        StartPos int `json:"start_pos"`
+        PageNum  int `json:"page_num"`
+        //返回多少条数据
+        PageTotalRecord int `json:"pageTotalRecord"`
+        //共多少页
+        TotalPage int                           `json:"totalPage"`
+        Result    []WebUserAccountRepairBillRecord `json:"data"`
+    }
 
-desp为调用失败，就是code 为非200 的描述信息。
+
+    type WebUserAccountRepairBillRecord struct {
+        BillStatus   string `json:"billStatusDesc"`
+        BillType     string `json:"billTypeDesc"`
+        CreateTime   string `json:"createTime"`
+        RepairBillNo string `json:"repairBillNo"`
+        SubName      string `json:"subName"`
+        // 链账号
+        SubmitUser string `json:"submitUser"`
+        //青苹果账号名
+        SubmitUserAccount string `json:"submitUserAccount"`
+
+        TradeId    string `json:"tradeId"`
+        UpdateTime string `json:"updateTime"`
+
+        SubMitSubUser string `json:"submitSubUser"`
+    }
+
+
 

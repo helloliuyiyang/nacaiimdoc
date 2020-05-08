@@ -1,53 +1,52 @@
-### **用户申诉详情**
+### 用户申诉详情
 
-json结构：
+所属服务：repair
 
-```
-{
-    "api_name":"user_appeal_detail,
-    "id":1
+提供对象：钱包app
 
-}
-```
+开发者：cary
 
-信息字段含义：
+报错频率：
 
-| 字段 | 含义 |
-| :--- | :--- |
-| api\_name | 调用API名称 |
-| id | 数据库主键ID |
-
-回应消息
+URL
 
 ```
-{
-    "api_name":"user_appeal_detail,
-    "code":200,
-    "data":obj,
-    "desp":""
-
-}
+/repair/appUser/queryRepairDetail
 ```
 
-    //obj对象属性,原web端返回的数据结构
-    type UserAppeal struct {
-    	//工单状态
-    	BillStatus int `json:"billStatus"`
-    	//工单单号
+请求参数
+
+    type AppUserRepairDetailReq struct {
+    	From         string `json:"from"`
     	RepairBillNo string `json:"repairBillNo"`
-    	//im的最后更新时间
-    	ImUpdateTime string `json:"imUpdateTime"`
-    	//该工单留言的数量，用于在页面上展示用的
-    	RepairBillMessageCount int `json:"repairBillMessageCount"`
-    	//工单的会员名称
-    	SubName string `json:"subName"`
-    	//工单问题所属用户角色
-    	UserRole int `json:"userRole"`
     }
 
-回应消息api\_name 代表当前调用的那个函数。
+返回值
 
-code代表这个消息的调用结果。200 为成功
+    type WebAppUserRepairBillDetailRes struct {
+    	RepairBillNo       string                   `json:"repairBillNo"`
+    	RepairBillType     string                   `json:"billTypeDesc"`
+    	RepairBillStatus   string                   `json:"billStatusDesc"`
+    	BillType           int                      `json:"billType"`
+    	HandleRemark       string                   `json:"handleRemark"`
+    	Content            string                   `json:"content"`
+    	TradeId            string                   `json:"tradeId"`
+    	SubName            string                   `json:"subName"`
+    	AmountRmb          int64                    `json:"amountRmb"`
+    	HandleImgs         []string                 `json:"handleImgs"`
+    	RelativeImgUrlList []string                 `json:"relativeImgUrlList"`
+    	CurAcceptorEos     string                   `json:"curAcceptorEos"`
+    	Creator            string                   `json:"creator"`
+    	Receiver           string                   `json:"receiver"`
+    	PeerOrderNo        string                   `json:"peerOrderNo"`
+    	CreateTime         string                   `json:"createTime"`
+    	CreateTimestamp    int64                    `json:"create_timestamp"`
+    	BillStatus         int                      `json:"billStatus"`
+    	OrderStatus        string                   `json:"order_status"`
+    	RepairBillLogList  []entity.DBRepairBillLog `json:"repairBillList"`
+    	CreatorRole        int                      `json:"creatorRole"`
+    	Groupid            int64                    `json:"groupid"`
+    }
 
-desp为调用失败，就是code 为非200 的描述信息。
+
 
