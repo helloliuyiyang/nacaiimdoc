@@ -1,0 +1,1835 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.查询群主是否开启邀请确认 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4yao-qing-hao-you-jin-ru-qun-liao-fa-song-gei-qun-zhu-yao-qing-que-ren-xiao-xi.html" />
+    
+    
+    <link rel="prev" href="2she-zhi-kai-qi-qun-yao-qing-que-ren.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-xi-tong-she-ji.html">
+            
+                <a href="../../1-xi-tong-she-ji.html">
+            
+                    
+                    1 系统设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../11-bu-shu-tu.html">
+            
+                <a href="../../11-bu-shu-tu.html">
+            
+                    
+                    1.1 部署图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.html">
+            
+                <a href="../../12-dian-dui-dian-fa-song-xiao-xi-de-liu-cheng.html">
+            
+                    
+                    1.2 点对点发送消息的流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../13-xiao-xi-de-cun-chu-jie-gou.html">
+            
+                <a href="../../13-xiao-xi-de-cun-chu-jie-gou.html">
+            
+                    
+                    1.3 消息的存储结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../14-xi-tong-qi-dong.html">
+            
+                <a href="../../14-xi-tong-qi-dong.html">
+            
+                    
+                    1.4 系统启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../15-fu-wu-qi-shi-yong-de-duan-kou.html">
+            
+                <a href="../../15-fu-wu-qi-shi-yong-de-duan-kou.html">
+            
+                    
+                    1.5 服务器使用的端口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-cun-chu-fu-wu-qi.html">
+            
+                <a href="../../2-cun-chu-fu-wu-qi.html">
+            
+                    
+                    2 存储服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../21-rpc-jie-kou.html">
+            
+                <a href="../../21-rpc-jie-kou.html">
+            
+                    
+                    2.1 rpc 接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../21-rpc-jie-kou/211-dian-dui-dian-huo-qu-tong-bu-de-xiao-xi.html">
+            
+                <a href="../../21-rpc-jie-kou/211-dian-dui-dian-huo-qu-tong-bu-de-xiao-xi.html">
+            
+                    
+                    2.1.1 点对点获取同步的消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../21-rpc-jie-kou/212-huo-qu-qun-zu-de-tong-bu-xiao-xi.html">
+            
+                <a href="../../21-rpc-jie-kou/212-huo-qu-qun-zu-de-tong-bu-xiao-xi.html">
+            
+                    
+                    2.1.2 获取群组的同步消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../21-rpc-jie-kou/213-bao-cun-dian-dui-dian-de-xiao-xi.html">
+            
+                <a href="../../21-rpc-jie-kou/213-bao-cun-dian-dui-dian-de-xiao-xi.html">
+            
+                    
+                    2.1.3 保存点对点的消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../21-rpc-jie-kou/214-bao-cun-fa-song-dao-qun-zu-de-xiao-xi.html">
+            
+                <a href="../../21-rpc-jie-kou/214-bao-cun-fa-song-dao-qun-zu-de-xiao-xi.html">
+            
+                    
+                    2.1.4 保存发送到群组的消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../3-lu-you-fu-wu-qi.html">
+            
+                <a href="../../3-lu-you-fu-wu-qi.html">
+            
+                    
+                    3 路由服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-jie-ru-fu-wu-qi.html">
+            
+                <a href="../../4-jie-ru-fu-wu-qi.html">
+            
+                    
+                    4 接入服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-jie-ru-fu-wu-qi/41-xiao-xi-cun-ru-redis.html">
+            
+                <a href="../../4-jie-ru-fu-wu-qi/41-xiao-xi-cun-ru-redis.html">
+            
+                    
+                    4.1 消息存入redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-jie-ru-fu-wu-qi/42-cong-redis-zhong-cha-zhao-xiao-xi.html">
+            
+                <a href="../../4-jie-ru-fu-wu-qi/42-cong-redis-zhong-cha-zhao-xiao-xi.html">
+            
+                    
+                    4.2 从redis中查找消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../5-tong-zhi-fu-wu-qi.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi.html">
+            
+                    
+                    5  通知服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi.html">
+            
+                    
+                    5.1 通讯协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/511-xin-tiao-xie-yi.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/511-xin-tiao-xie-yi.html">
+            
+                    
+                    5.1.1 心跳协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/512-dian-dui-dian-de-tong-bu-tong-zhi.html">
+            
+                    
+                    5.1.2 点对点的同步通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/513-dian-dui-dian-de-tong-bu-tong-zhi-dai-shu-ju.html">
+            
+                    
+                    5.1.3 点对点的同步通知带数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../../5-tong-zhi-fu-wu-qi/514-qun-zu-tong-bu-tong-zhi.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/514-qun-zu-tong-bu-tong-zhi.html">
+            
+                    
+                    5.1.4 群组同步通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/515-qun-zu-tong-bu-tong-zhi-dai-shu-ju.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/51-tong-xun-xie-yi/515-qun-zu-tong-bu-tong-zhi-dai-shu-ju.html">
+            
+                    
+                    5.1.5 群组同步通知带数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../5-tong-zhi-fu-wu-qi/52-tong-bu-la-qu-xiao-xi-xie-yi.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/52-tong-bu-la-qu-xiao-xi-xie-yi.html">
+            
+                    
+                    5.2 同步拉取消息协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../5-tong-zhi-fu-wu-qi/53-fa-song-liao-tian-xiao-xi-xie-yi.html">
+            
+                <a href="../../5-tong-zhi-fu-wu-qi/53-fa-song-liao-tian-xiao-xi-xie-yi.html">
+            
+                    
+                    5.3  发送聊天消息协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../6-imsdk.html">
+            
+                <a href="../../6-imsdk.html">
+            
+                    
+                    6 imsdk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../6-imsdk/61-imsdkjie-gou.html">
+            
+                <a href="../../6-imsdk/61-imsdkjie-gou.html">
+            
+                    
+                    6.1 imsdk结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../6-imsdk/61-imsdkjie-gou/611-v2ban-ben-liao-tian-xiao-xi-jie-xi.html">
+            
+                <a href="../../6-imsdk/61-imsdkjie-gou/611-v2ban-ben-liao-tian-xiao-xi-jie-xi.html">
+            
+                    
+                    6.1.1 v2版本聊天消息解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../6-imsdk/62-apijie-kou.html">
+            
+                <a href="../../6-imsdk/62-apijie-kou.html">
+            
+                    
+                    6.2 api接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../6-imsdk/62-apijie-kou/621-she-zhi-dang-qian-de-shi-pei-qi.html">
+            
+                <a href="../../6-imsdk/62-apijie-kou/621-she-zhi-dang-qian-de-shi-pei-qi.html">
+            
+                    
+                    6.2.1 设置当前的适配器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../../6-imsdk/62-apijie-kou/622-she-zhi-dang-qian-huan-cun-de-fu-wu-duan-de-pei-zhi-xin-xi.html">
+            
+                <a href="../../6-imsdk/62-apijie-kou/622-she-zhi-dang-qian-huan-cun-de-fu-wu-duan-de-pei-zhi-xin-xi.html">
+            
+                    
+                    6.2.2  设置当前缓存的服务端的配置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../../6-imsdk/62-apijie-kou/623-huo-qu-dang-qian-de-fu-wu-duan-de-pei-zhi-xin-xi.html">
+            
+                <a href="../../6-imsdk/62-apijie-kou/623-huo-qu-dang-qian-de-fu-wu-duan-de-pei-zhi-xin-xi.html">
+            
+                    
+                    6.2.3 获取当前的服务端的配置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../../6-imsdk/62-apijie-kou/624-qie-huan-zhang-hao.html">
+            
+                <a href="../../6-imsdk/62-apijie-kou/624-qie-huan-zhang-hao.html">
+            
+                    
+                    6.2.4 切换账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../../6-imsdk/62-apijie-kou/625-fa-song-dian-dui-dian-xiao-xi.html">
+            
+                <a href="../../6-imsdk/62-apijie-kou/625-fa-song-dian-dui-dian-xiao-xi.html">
+            
+                    
+                    6.2.5 发送点对点消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="../../6-imsdk/62-apijie-kou/626-ri-zhi-jie-kou.html">
+            
+                <a href="../../6-imsdk/62-apijie-kou/626-ri-zhi-jie-kou.html">
+            
+                    
+                    6.2.6  日志接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou.html">
+            
+                    
+                    6.3 桌面IM接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/631.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/631.html">
+            
+                    
+                    6.3.1 设置本地IM账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/632.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/632.html">
+            
+                    
+                    6.3.2 启动IMSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/633.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/633.html">
+            
+                    
+                    6.3.3 发送点对点消息指定标记位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/634-she-zhi-ben-di-im-zhang-hao.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/634-she-zhi-ben-di-im-zhang-hao.html">
+            
+                    
+                    6.3.4 发送群组消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/635-gei-qian-duan-tong-zhi-liao-tian-xiao-xi.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/635-gei-qian-duan-tong-zhi-liao-tian-xiao-xi.html">
+            
+                    
+                    6.3.5 给前端通知聊天消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.6" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/636-cha-xun-xiao-xi-lie-biao.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/636-cha-xun-xiao-xi-lie-biao.html">
+            
+                    
+                    6.3.6 查询消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.7" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/637-cha-xun-li-shi-xiao-xi-ji-lu.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/637-cha-xun-li-shi-xiao-xi-ji-lu.html">
+            
+                    
+                    6.3.7 查询群组历史消息记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.8" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/638-shan-chu-qun-zu-liao-tian-hui-hua.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/638-shan-chu-qun-zu-liao-tian-hui-hua.html">
+            
+                    
+                    6.3.8 删除群组聊天会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.9" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/639-ting-zhi-imsdk.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/639-ting-zhi-imsdk.html">
+            
+                    
+                    6.3.9 关闭IMSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.10" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/6310-cha-xun-dan-liao-li-shi-ji-lu.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/6310-cha-xun-dan-liao-li-shi-ji-lu.html">
+            
+                    
+                    6.3.10 查询单聊历史记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.11" data-path="../../6-imsdk/63-zhuo-mian-im-jie-kou/6311-fa-song-tu-pian-xiao-xi.html">
+            
+                <a href="../../6-imsdk/63-zhuo-mian-im-jie-kou/6311-fa-song-tu-pian-xiao-xi.html">
+            
+                    
+                    6.3.11 发送图片消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../7-imguan-lifu-wu-qi-qim.html">
+            
+                <a href="../../7-imguan-lifu-wu-qi-qim.html">
+            
+                    
+                    7 im管理服务器qim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../8-xiao-xi-tong-bu-fu-wu-qi.html">
+            
+                <a href="../../8-xiao-xi-tong-bu-fu-wu-qi.html">
+            
+                    
+                    8  消息同步服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../81-tong-xun-xie-yi.html">
+            
+                <a href="../../81-tong-xun-xie-yi.html">
+            
+                    
+                    8.1 通讯协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../../811-fa-song-dian-dui-dian-de-liao-tian-xiao-xi.html">
+            
+                <a href="../../811-fa-song-dian-dui-dian-de-liao-tian-xiao-xi.html">
+            
+                    
+                    8.1.1 发送点对点的聊天消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="../../812-fa-song-qun-zu-de-liao-tian-xiao-xi.html">
+            
+                <a href="../../812-fa-song-qun-zu-de-liao-tian-xiao-xi.html">
+            
+                    
+                    8.1.2 发送群组的聊天消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="../../813-fa-song-qun-zu-liao-tian-xiao-xi-de-hui-ying.html">
+            
+                <a href="../../813-fa-song-qun-zu-liao-tian-xiao-xi-de-hui-ying.html">
+            
+                    
+                    8.1.3 发送群组聊天消息的回应
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../9-xiao-xi-tui-song-fu-wu.html">
+            
+                <a href="../../9-xiao-xi-tui-song-fu-wu.html">
+            
+                    
+                    9 消息推送服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../91-xiao-xi-tui-song-xie-yi.html">
+            
+                <a href="../../91-xiao-xi-tui-song-xie-yi.html">
+            
+                    
+                    9.1 消息推送协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../92-xiao-xi-tui-song-she-zhi.html">
+            
+                <a href="../../92-xiao-xi-tui-song-she-zhi.html">
+            
+                    
+                    9.2 消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../10-qun-die-dai.html">
+            
+                <a href="../../10-qun-die-dai.html">
+            
+                    
+                    10 群迭代
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../qun-fen-xiang.html">
+            
+                <a href="../qun-fen-xiang.html">
+            
+                    
+                    群分享
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="../qun-fen-xiang/sheng-cheng-qun-lian-jie.html">
+            
+                <a href="../qun-fen-xiang/sheng-cheng-qun-lian-jie.html">
+            
+                    
+                    生成群连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="../qun-fen-xiang/fa-song-im-yao-qing-xiao-xi.html">
+            
+                <a href="../qun-fen-xiang/fa-song-im-yao-qing-xiao-xi.html">
+            
+                    
+                    发送IM分享消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="../qun-fen-xiang/shen-qing-jia-ru-qun.html">
+            
+                <a href="../qun-fen-xiang/shen-qing-jia-ru-qun.html">
+            
+                    
+                    申请加入群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" data-path="../qun-fen-xiang/tong-yi-jia-ru-qun.html">
+            
+                <a href="../qun-fen-xiang/tong-yi-jia-ru-qun.html">
+            
+                    
+                    确认加入群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../qun-tou-50cf-qun-guan-li.html">
+            
+                <a href="../qun-tou-50cf-qun-guan-li.html">
+            
+                    
+                    群头像/群管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="1she-zhi-qun-tou-xiang-jie-kou.html">
+            
+                <a href="1she-zhi-qun-tou-xiang-jie-kou.html">
+            
+                    
+                    1.设置群头像接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="2she-zhi-kai-qi-qun-yao-qing-que-ren.html">
+            
+                <a href="2she-zhi-kai-qi-qun-yao-qing-que-ren.html">
+            
+                    
+                    2.设置开启群邀请确认
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2.3" data-path="3cha-xun-qun-zhu-shi-fou-kai-qi-yao-qing-que-ren.html">
+            
+                <a href="3cha-xun-qun-zhu-shi-fou-kai-qi-yao-qing-que-ren.html">
+            
+                    
+                    3.查询群主是否开启邀请确认
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="4yao-qing-hao-you-jin-ru-qun-liao-fa-song-gei-qun-zhu-yao-qing-que-ren-xiao-xi.html">
+            
+                <a href="4yao-qing-hao-you-jin-ru-qun-liao-fa-song-gei-qun-zhu-yao-qing-que-ren-xiao-xi.html">
+            
+                    
+                    4.邀请好友进入群聊发送给群主 邀请确认消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.5" data-path="5tian-jia-qun-cheng-yuan.html">
+            
+                <a href="5tian-jia-qun-cheng-yuan.html">
+            
+                    
+                    5.添加群成员
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.6" data-path="6bu-tong-yi-yao-qing-de-hao-you-jia-ru-qun-zu.html">
+            
+                <a href="6bu-tong-yi-yao-qing-de-hao-you-jia-ru-qun-zu.html">
+            
+                    
+                    6.不同意邀请的好友加入群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../qun-jin-8a0026-si-liao.html">
+            
+                <a href="../../qun-jin-8a0026-si-liao.html">
+            
+                    
+                    群禁言&私聊
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.3.1" data-path="../../qun-jin-8a0026-si-liao/1qun-jin-yan-kai-guan-she-zhi.html">
+            
+                <a href="../../qun-jin-8a0026-si-liao/1qun-jin-yan-kai-guan-she-zhi.html">
+            
+                    
+                    1.群禁言开关设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.2" data-path="../../qun-jin-8a0026-si-liao/2qun-dan-liao-kai-guan-she-zhi.html">
+            
+                <a href="../../qun-jin-8a0026-si-liao/2qun-dan-liao-kai-guan-she-zhi.html">
+            
+                    
+                    2.群单聊开关设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.3" data-path="../../qun-jin-8a0026-si-liao/3cha-xun-qun-dan-liao-he-jin-yan-zhuang-tai.html">
+            
+                <a href="../../qun-jin-8a0026-si-liao/3cha-xun-qun-dan-liao-he-jin-yan-zhuang-tai.html">
+            
+                    
+                    3.查询群单聊和禁言状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../qun-guan-lian-dapp.html">
+            
+                <a href="../qun-guan-lian-dapp.html">
+            
+                    
+                    群关联dapp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.4.1" data-path="../qun-guan-lian-dapp/1huo-qu-qun-dapp.html">
+            
+                <a href="../qun-guan-lian-dapp/1huo-qu-qun-dapp.html">
+            
+                    
+                    1.获取群dapp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4.2" data-path="../qun-guan-lian-dapp/2cao-zuo-qun-dapp.html">
+            
+                <a href="../qun-guan-lian-dapp/2cao-zuo-qun-dapp.html">
+            
+                    
+                    2.操作群dapp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../11-ge-ren-cao-zuo-xiang-guan.html">
+            
+                <a href="../../11-ge-ren-cao-zuo-xiang-guan.html">
+            
+                    
+                    11 个人操作相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren.html">
+            
+                <a href="../../11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren.html">
+            
+                    
+                    关联dapp到个人
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../../11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/1huo-qu-ge-ren-guan-lian-dapp.html">
+            
+                <a href="../../11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/1huo-qu-ge-ren-guan-lian-dapp.html">
+            
+                    
+                    1.获取个人dapp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.1.2" data-path="../../11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/2cao-zuo-ge-ren-dapp.html">
+            
+                <a href="../../11-ge-ren-cao-zuo-xiang-guan/guan-lian-dapp-dao-ge-ren/2cao-zuo-ge-ren-dapp.html">
+            
+                    
+                    2.操作个人dapp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../11-ge-ren-cao-zuo-xiang-guan/kai-fa-ping-tai-cha-xun-jie-kou.html">
+            
+                <a href="../../11-ge-ren-cao-zuo-xiang-guan/kai-fa-ping-tai-cha-xun-jie-kou.html">
+            
+                    
+                    开发平台查询接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../zhuo-mian-gong-dan.html">
+            
+                <a href="../../zhuo-mian-gong-dan.html">
+            
+                    
+                    桌面工单
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../xi-tong-mo-kuai.html">
+            
+                <a href="../../xi-tong-mo-kuai.html">
+            
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1.1" data-path="../../xi-tong-mo-kuai/xi-tong-zu-wang-tu.html">
+            
+                <a href="../../xi-tong-mo-kuai/xi-tong-zu-wang-tu.html">
+            
+                    
+                    系统组网图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.1.2" data-path="../../xi-tong-mo-kuai/appzai-fa-bi-im-qun-li-shen-su.html">
+            
+                <a href="../../xi-tong-mo-kuai/appzai-fa-bi-im-qun-li-shen-su.html">
+            
+                    
+                    app在法币IM群里申诉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.1.3" data-path="../../xi-tong-mo-kuai/appzhi-jie-shen-su-ding-dan.html">
+            
+                <a href="../../xi-tong-mo-kuai/appzhi-jie-shen-su-ding-dan.html">
+            
+                    
+                    app直接申诉订单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.1.4" data-path="../../xi-tong-mo-kuai/yun-ying-hou-tai-chuang-jian-gong-dan.html">
+            
+                <a href="../../xi-tong-mo-kuai/yun-ying-hou-tai-chuang-jian-gong-dan.html">
+            
+                    
+                    运营后台创建工单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.1.5" data-path="../../xi-tong-mo-kuai/shang-jia-zhuo-mian-duan-chuang-jian-gong-dan.html">
+            
+                <a href="../../xi-tong-mo-kuai/shang-jia-zhuo-mian-duan-chuang-jian-gong-dan.html">
+            
+                    
+                    商家桌面端创建工单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../yun-ying-hou-tai.html">
+            
+                <a href="../../yun-ying-hou-tai.html">
+            
+                    
+                    运营后台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.2.1" data-path="../../yun-ying-hou-tai/she-zhi-ben-di-im-zhang-hao.html">
+            
+                <a href="../../yun-ying-hou-tai/she-zhi-ben-di-im-zhang-hao.html">
+            
+                    
+                    设置本地IM账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2.2" data-path="../../yun-ying-hou-tai/qi-dong-imsdk.html">
+            
+                <a href="../../yun-ying-hou-tai/qi-dong-imsdk.html">
+            
+                    
+                    启动IMSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../../shang-jia-ping-tai.html">
+            
+                <a href="../../shang-jia-ping-tai.html">
+            
+                    
+                    商家平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.3.1" data-path="../../shang-jia-ping-tai/she-zhi-ben-di-im-zhang-hao.html">
+            
+                <a href="../../shang-jia-ping-tai/she-zhi-ben-di-im-zhang-hao.html">
+            
+                    
+                    设置本地IM账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.2" data-path="../../shang-jia-ping-tai/2qi-dong-imsdk.html">
+            
+                <a href="../../shang-jia-ping-tai/2qi-dong-imsdk.html">
+            
+                    
+                    启动IMSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.3" data-path="../../shang-jia-ping-tai/fa-song-qun-zu-xiao-xi.html">
+            
+                <a href="../../shang-jia-ping-tai/fa-song-qun-zu-xiao-xi.html">
+            
+                    
+                    发送群组消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.4" data-path="../../shang-jia-ping-tai/gei-qian-duan-tong-zhi-liao-tian-xiao-xi.html">
+            
+                <a href="../../shang-jia-ping-tai/gei-qian-duan-tong-zhi-liao-tian-xiao-xi.html">
+            
+                    
+                    给前端通知聊天消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.5" data-path="../../shang-jia-ping-tai/5cha-xun-xiao-xi-lie-biao.html">
+            
+                <a href="../../shang-jia-ping-tai/5cha-xun-xiao-xi-lie-biao.html">
+            
+                    
+                    查询消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.6" data-path="../../shang-jia-ping-tai/6cha-xun-li-shi-xiao-xi-ji-lu.html">
+            
+                <a href="../../shang-jia-ping-tai/6cha-xun-li-shi-xiao-xi-ji-lu.html">
+            
+                    
+                    查询群组历史消息记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.7" data-path="../../shang-jia-ping-tai/guan-bi-imsdk.html">
+            
+                <a href="../../shang-jia-ping-tai/guan-bi-imsdk.html">
+            
+                    
+                    关闭IMSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3.8" data-path="../../shang-jia-ping-tai/shan-chu-zheng-ge-liao-tian-hui-hua.html">
+            
+                <a href="../../shang-jia-ping-tai/shan-chu-zheng-ge-liao-tian-hui-hua.html">
+            
+                    
+                    删除群组聊天会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../../app.html">
+            
+                <a href="../../app.html">
+            
+                    
+                    APP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.4.1" data-path="../../app/yong-hu-shen-su-jie-kou.html">
+            
+                <a href="../../app/yong-hu-shen-su-jie-kou.html">
+            
+                    
+                    用户申诉接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.2" data-path="../../app/yong-hu-shen-su-lie-biao-yu-xiang-qing.html">
+            
+                <a href="../../app/yong-hu-shen-su-lie-biao-yu-xiang-qing.html">
+            
+                    
+                    用户申诉列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.3" data-path="../../app/yong-hu-shen-su-xiang-qing.html">
+            
+                <a href="../../app/yong-hu-shen-su-xiang-qing.html">
+            
+                    
+                    用户申诉详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.4" data-path="../../app/tong-guo-ding-dan-cha-xun-gong-dan.html">
+            
+                <a href="../../app/tong-guo-ding-dan-cha-xun-gong-dan.html">
+            
+                    
+                    通过订单查询工单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.5" data-path="../../app/cheng-dui-ren-shen-su-lie-biao.html">
+            
+                <a href="../../app/cheng-dui-ren-shen-su-lie-biao.html">
+            
+                    
+                    承兑人申诉列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.6" data-path="../../app/cheng-dui-ren-shen-su-xiang-qing.html">
+            
+                <a href="../../app/cheng-dui-ren-shen-su-xiang-qing.html">
+            
+                    
+                    承兑人申诉详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.7" data-path="../../gong-dan-tui-song-xiao-xi.html">
+            
+                <a href="../../gong-dan-tui-song-xiao-xi.html">
+            
+                    
+                    工单推送消息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.4.7.1" data-path="../../gong-dan-dui-xiang-shu-ju.html">
+            
+                <a href="../../gong-dan-dui-xiang-shu-ju.html">
+            
+                    
+                    工单对象数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4.7.2" data-path="../../gong-dan-zhuang-tai-shu-ju.html">
+            
+                <a href="../../gong-dan-zhuang-tai-shu-ju.html">
+            
+                    
+                    工单状态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >3.查询群主是否开启邀请确认</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="2&#x67E5;&#x8BE2;&#x7FA4;&#x4E3B;&#x662F;&#x5426;&#x5F00;&#x542F;&#x9080;&#x8BF7;&#x786E;&#x8BA4;">2.&#x67E5;&#x8BE2;&#x7FA4;&#x4E3B;&#x662F;&#x5426;&#x5F00;&#x542F;&#x9080;&#x8BF7;&#x786E;&#x8BA4;</h3>
+<p>&#x6240;&#x5C5E;&#x670D;&#x52A1;&#xFF1A;qim</p>
+<p>&#x63D0;&#x4F9B;&#x5BF9;&#x8C61;&#xFF1A;&#x94B1;&#x5305;app</p>
+<p>&#x5F00;&#x53D1;&#x8005;&#xFF1A;cary</p>
+<p>&#x62A5;&#x9519;&#x9891;&#x7387;&#xFF1A;</p>
+<p>URL</p>
+<pre><code>/nacaiim/getInviteSwitch
+</code></pre><p>&#x8BF7;&#x6C42;&#x53C2;&#x6570;</p>
+<pre><code>type GetInviteSwitchReq struct {
+    GroupId int64 `json:&quot;groupid&quot;`
+}
+</code></pre><p>&#x8FD4;&#x56DE;&#x503C;</p>
+<pre><code>type GetInviteSwitchRes struct {
+    GroupId int64 `json:&quot;groupid&quot;`
+    InviteSwitch int64 `json:&quot;invite_switch&quot;`
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2she-zhi-kai-qi-qun-yao-qing-que-ren.html" class="navigation navigation-prev " aria-label="Previous page: 2.设置开启群邀请确认">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4yao-qing-hao-you-jin-ru-qun-liao-fa-song-gei-qun-zhu-yao-qing-que-ren-xiao-xi.html" class="navigation navigation-next " aria-label="Next page: 4.邀请好友进入群聊发送给群主 邀请确认消息">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.查询群主是否开启邀请确认","level":"1.11.2.3","depth":3,"next":{"title":"4.邀请好友进入群聊发送给群主 邀请确认消息","level":"1.11.2.4","depth":3,"path":"10-qun-die-dai/qun-tou-50cf-qun-guan-li/4yao-qing-hao-you-jin-ru-qun-liao-fa-song-gei-qun-zhu-yao-qing-que-ren-xiao-xi.md","ref":"10-qun-die-dai/qun-tou-50cf-qun-guan-li/4yao-qing-hao-you-jin-ru-qun-liao-fa-song-gei-qun-zhu-yao-qing-que-ren-xiao-xi.md","articles":[]},"previous":{"title":"2.设置开启群邀请确认","level":"1.11.2.2","depth":3,"path":"10-qun-die-dai/qun-tou-50cf-qun-guan-li/2she-zhi-kai-qi-qun-yao-qing-que-ren.md","ref":"10-qun-die-dai/qun-tou-50cf-qun-guan-li/2she-zhi-kai-qi-qun-yao-qing-que-ren.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"10-qun-die-dai/qun-tou-50cf-qun-guan-li/3cha-xun-qun-zhu-shi-fou-kai-qi-yao-qing-que-ren.md","mtime":"2020-04-30T02:34:25.722Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-08T09:44:55.578Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
