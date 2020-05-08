@@ -105,6 +105,7 @@
     * [用户申诉接口](app/yong-hu-shen-su-jie-kou.md)
     * [用户申诉列表](app/yong-hu-shen-su-lie-biao-yu-xiang-qing.md)
     * [用户申诉详情](app/yong-hu-shen-su-xiang-qing.md)
+    * [通过订单查询工单](app/tong-guo-ding-dan-cha-xun-gong-dan.md)
     * [承兑人申诉列表](app/cheng-dui-ren-shen-su-lie-biao.md)
     * [承兑人申诉详情](app/cheng-dui-ren-shen-su-xiang-qing.md)
     * [工单推送消息](gong-dan-tui-song-xiao-xi.md)
