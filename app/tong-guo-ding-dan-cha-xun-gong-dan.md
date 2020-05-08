@@ -17,14 +17,14 @@ URL
 请求参数
 
     type GetRepairIdReq struct {
-    	From    string `json:"from"`
-    	TradeId string `json:"tradeId"` //支付订单号
+        From    string `json:"from"`
+        TradeId string `json:"tradeId"` //支付订单号
     }
 
 返回值
 
     type GetRepairIdRes struct {
-    	Repairid string `json:"repairid"`//工单号
+        Repairid string `json:"repairid"`//工单号
     }
 
 
